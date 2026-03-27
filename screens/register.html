@@ -1,0 +1,48 @@
+<!-- 仮ユーザー登録画面 -->
+<div class="register-screen">
+  <div class="reg-logo">🕵️</div>
+  <div class="reg-title">エージェント登録</div>
+  <div class="reg-sub">ひみつ結社に参加するために<br>あなたの情報を登録してください</div>
+
+  <div class="reg-form">
+    <label class="reg-label">エージェント名</label>
+    <input type="text" id="regName" class="reg-input" placeholder="例: エージェント・ネコ" maxlength="20">
+
+    <label class="reg-label">所属結社</label>
+    <div class="reg-society-list" id="regSocietyList">
+      <div class="reg-soc" data-key="hakodate" data-icon="🌊">
+        <div class="reg-soc-icon">🌊</div>
+        <div class="reg-soc-name">函館ひみつ結社</div>
+        <div class="reg-soc-type">海の街</div>
+      </div>
+      <div class="reg-soc" data-key="kusatsu" data-icon="♨️">
+        <div class="reg-soc-icon">♨️</div>
+        <div class="reg-soc-name">草津ひみつ結社</div>
+        <div class="reg-soc-type">温泉街</div>
+      </div>
+      <div class="reg-soc" data-key="kyoto" data-icon="🏯">
+        <div class="reg-soc-icon">🏯</div>
+        <div class="reg-soc-name">京都ひみつ結社</div>
+        <div class="reg-soc-type">城下町</div>
+      </div>
+      <div class="reg-soc" data-key="sapporo" data-icon="🏙">
+        <div class="reg-soc-icon">🏙</div>
+        <div class="reg-soc-name">札幌ひみつ結社</div>
+        <div class="reg-soc-type">都市近郊</div>
+      </div>
+      <div class="reg-soc" data-key="kanazawa" data-icon="🏯">
+        <div class="reg-soc-icon">🏯</div>
+        <div class="reg-soc-name">金沢ひみつ結社</div>
+        <div class="reg-soc-type">城下町</div>
+      </div>
+      <div class="reg-soc" data-key="kobe" data-icon="🌊">
+        <div class="reg-soc-icon">🌊</div>
+        <div class="reg-soc-name">神戸ひみつ結社</div>
+        <div class="reg-soc-type">海の街</div>
+      </div>
+    </div>
+
+    <button class="reg-btn" id="regSubmit" disabled>登録してはじめる</button>
+    <div class="reg-error" id="regError"></div>
+  </div>
+</div>

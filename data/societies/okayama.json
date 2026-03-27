@@ -1,0 +1,70 @@
+{
+  "society_key": "okayama",
+  "name": "岡山ひみつ結社",
+  "region_code": "331007",
+  "prefecture": "岡山県",
+  "municipality": "岡山市",
+  "template": "agricultural",
+  "theme_color": "#F39C12",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "晴れの国の秘密組織。",
+  "local_cuisine": [
+    "バラ寿司",
+    "デミカツ丼",
+    "ままかり料理",
+    "岡山フルーツ"
+  ],
+  "landmarks": [
+    "後楽園",
+    "岡山城",
+    "倉敷美観地区",
+    "吉備津神社"
+  ],
+  "annual_events": [
+    {
+      "name": "西大寺会陽",
+      "month": 2
+    },
+    {
+      "name": "岡山后楽園観月会",
+      "month": 9
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜じゃ",
+    "〜けぇ",
+    "〜なぁ"
+  ],
+  "crops": [
+    "白桃",
+    "マスカット",
+    "ぶどう",
+    "黄にら"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "池田光政", "field": "大名・教育者", "era": "江戸", "episode": "岡山藩主。日本最古の庶民学校「閑谷学校」を設立し後楽園を造園した名君。儒学を政治の柱とした教育藩主" },
+    { "name": "宇喜多秀家", "field": "武将・大名", "era": "戦国-江戸", "episode": "岡山城を築城した豊臣秀吉の五大老の一人。関ヶ原で西軍に参加し敗れた後、八丈島に配流された悲劇の武将" },
+    { "name": "犬養毅", "field": "政治家", "era": "明治-昭和", "episode": "岡山・庭瀬出身の元内閣総理大臣。五・一五事件で暗殺された際「話せばわかる」と言ったとされる立憲政治の守護者" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

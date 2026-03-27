@@ -1,0 +1,73 @@
+{
+  "society_key": "nagasaki",
+  "name": "長崎ひみつ結社",
+  "region_code": "421003",
+  "prefecture": "長崎県",
+  "municipality": "長崎市",
+  "template": "coastal",
+  "theme_color": "#1F3A6E",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "出島の歴史が息づく港町の秘密組織。",
+  "local_cuisine": [
+    "ちゃんぽん",
+    "皿うどん",
+    "カステラ",
+    "トルコライス",
+    "角煮まん"
+  ],
+  "landmarks": [
+    "出島",
+    "グラバー園",
+    "平和公園",
+    "稲佐山",
+    "軍艦島"
+  ],
+  "annual_events": [
+    {
+      "name": "長崎ランタンフェスティバル",
+      "month": 2
+    },
+    {
+      "name": "長崎くんち",
+      "month": 10
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜たい",
+    "〜ばい",
+    "なんごち"
+  ],
+  "fish_species": [
+    "アジ",
+    "サバ",
+    "イカ",
+    "タチウオ",
+    "トビウオ"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "シーボルト", "field": "医師・博物学者", "era": "江戸後期", "episode": "長崎出島に赴任したドイツ人医師。鳴滝塾で多くの日本人医師を育て日本の植物・動物を西洋に紹介した" },
+    { "name": "グラバー（トーマス・グラバー）", "field": "実業家", "era": "幕末-明治", "episode": "長崎を拠点にした英国商人。坂本龍馬ら倒幕派に武器を供給し三菱財閥ともつながる日本近代化の縁の下の力持ち" },
+    { "name": "永井隆", "field": "医師・文学者", "era": "昭和", "episode": "長崎の原爆で被爆しながら被爆者の救護に当たった医師。「長崎の鐘」を著し平和への祈りを世界に発信した" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

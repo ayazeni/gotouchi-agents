@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<title>GLOCAL AGENTS — ご当地ひみつ結社</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/design-system.css">
+<link rel="stylesheet" href="assets/css/layout.css?v=20260325e">
+<link rel="stylesheet" href="assets/css/components.css?v=20260326m">
+<link rel="stylesheet" href="assets/css/nav.css">
+<link rel="stylesheet" href="assets/css/loader.css">
+</head>
+<body>
+<div class="app-scale-wrapper" id="appWrapper">
+
+  <!-- ローディング画面 -->
+  <div class="loader-overlay" id="appLoader">
+    <div class="loader-logo">
+      <div class="loader-logo-mark">🕵️</div>
+      <div class="loader-logo-text">GLOCAL AGENTS</div>
+    </div>
+    <div class="loader-subtitle">ご当地ひみつ結社</div>
+    <div class="loader-spinner">
+      <div class="loader-dot"></div>
+      <div class="loader-dot"></div>
+      <div class="loader-dot"></div>
+    </div>
+  </div>
+
+  <!-- アプリコンテンツ -->
+  <div class="app-scroll">
+
+    <!-- STATUS BAR -->
+    <div class="status-bar">
+      <span class="time">9:41</span>
+      <div class="icons">
+        <span>●●●</span>
+        <span>WiFi</span>
+        <span>🔋</span>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <div class="app-header">
+      <div class="header-top">
+        <div class="header-logo">
+          <div class="logo-wrap">
+            <img src="assets/img/logo.png" class="logo-img" alt="GLOCAL AGENTS">
+          </div>
+        </div>
+        <div class="header-agent">
+          <div class="agent-info">
+            <div class="agent-name" id="agentName">エージェント・ネコ</div>
+            <div class="agent-id" id="agentId">#0042 · 函館結社</div>
+          </div>
+          <div class="agent-avatar" id="agentAvatar">🐱</div>
+        </div>
+      </div>
+      <div class="points-box">
+        <div class="points-left">
+          <div class="points-label">累計ポイント</div>
+          <div class="points-num">2,480 <span class="points-unit">pt</span></div>
+        </div>
+        <div class="points-today">
+          <div class="points-today-up">今日の獲得</div>
+          <span class="points-today-num">+150 pt</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 結社タブ（削除済み — 結社ページに統合） -->
+
+    <!-- 画面コンテンツ（SPA的に差し替え） -->
+    <div class="app-body" id="appBody">
+      <!-- screens/*.html がここに読み込まれる -->
+    </div>
+
+  </div><!-- /app-scroll -->
+
+  <!-- ボトムナビ -->
+  <div class="app-nav" id="appNav">
+    <div class="nav-item active">
+      <div class="nav-ico">🏠</div>
+      <div>ホーム</div>
+      <div class="nav-dot"></div>
+    </div>
+    <div class="nav-item">
+      <div class="nav-ico">🗺</div>
+      <div>結社</div>
+    </div>
+    <div class="nav-item">
+      <div class="nav-ico">🎯</div>
+      <div>ミッション</div>
+      <div class="nav-badge">3</div>
+    </div>
+    <div class="nav-item">
+      <div class="nav-ico">💎</div>
+      <div>ポイント</div>
+    </div>
+    <div class="nav-item">
+      <div class="nav-ico">👤</div>
+      <div>エージェント</div>
+    </div>
+  </div>
+
+  <!-- ログイン画面（未ログイン時） -->
+  <div class="auth-modal-overlay" id="authModal" style="display:none;">
+    <div class="auth-modal">
+      <div class="auth-logo">🕵️</div>
+      <div class="auth-title">GLOCAL AGENTS</div>
+      <div class="auth-subtitle">ご当地ひみつ結社</div>
+      <div class="auth-form">
+        <input type="text" class="auth-input" id="authId" placeholder="メールアドレス / ID">
+        <input type="password" class="auth-input" id="authPass" placeholder="パスワード">
+        <button class="auth-btn auth-btn-login" id="authLogin">ログイン</button>
+        <div class="auth-divider"><span>または</span></div>
+        <button class="auth-btn auth-btn-register" id="authRegister">新規登録はこちら</button>
+      </div>
+      <div class="auth-note">※ 認証機能は準備中です（仮ログイン対応）</div>
+    </div>
+  </div>
+
+  <!-- 新規登録モーダル -->
+  <div class="auth-modal-overlay" id="signupModal" style="display:none;">
+    <div class="reg-modal">
+      <div class="reg-logo">📝</div>
+      <div class="reg-title">新規アカウント登録</div>
+      <div class="reg-sub">メールアドレスとパスワードを入力して<br>アカウントを作成してください</div>
+      <div class="reg-form">
+        <label class="reg-label">メールアドレス</label>
+        <input type="email" id="signupEmail" class="reg-input" placeholder="example@mail.com">
+        <label class="reg-label">パスワード</label>
+        <input type="password" id="signupPass" class="reg-input" placeholder="8文字以上">
+        <label class="reg-label">パスワード（確認）</label>
+        <input type="password" id="signupPassConfirm" class="reg-input" placeholder="もう一度入力">
+        <button class="reg-btn" id="signupSubmit">登録する</button>
+        <div class="reg-error" id="signupError"></div>
+        <div class="auth-back-link" id="signupBack">← ログイン画面に戻る</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 結社選択モーダル（初回のみ表示） -->
+  <div class="reg-modal-overlay" id="regModal" style="display:none;">
+    <div class="reg-modal">
+      <div class="reg-logo">🕵️</div>
+      <div class="reg-title">まずは結社を決めよう！</div>
+      <div class="reg-sub">エージェント名と所属結社を選んで<br>ひみつ結社に参加しよう</div>
+      <div class="reg-form">
+        <label class="reg-label">エージェント名</label>
+        <input type="text" id="regName" class="reg-input" placeholder="例: エージェント・ネコ" maxlength="20">
+        <label class="reg-label">所属結社</label>
+        <div class="reg-society-list" id="regSocietyList">
+          <div class="reg-soc" data-key="hakodate" data-icon="🌊"><div class="reg-soc-icon">🌊</div><div class="reg-soc-name">函館ひみつ結社</div><div class="reg-soc-type">海の街</div></div>
+          <div class="reg-soc" data-key="kusatsu" data-icon="♨️"><div class="reg-soc-icon">♨️</div><div class="reg-soc-name">草津ひみつ結社</div><div class="reg-soc-type">温泉街</div></div>
+          <div class="reg-soc" data-key="kyoto" data-icon="🏯"><div class="reg-soc-icon">🏯</div><div class="reg-soc-name">京都ひみつ結社</div><div class="reg-soc-type">城下町</div></div>
+          <div class="reg-soc" data-key="sapporo" data-icon="🏙"><div class="reg-soc-icon">🏙</div><div class="reg-soc-name">札幌ひみつ結社</div><div class="reg-soc-type">都市近郊</div></div>
+          <div class="reg-soc" data-key="kanazawa" data-icon="🏯"><div class="reg-soc-icon">🏯</div><div class="reg-soc-name">金沢ひみつ結社</div><div class="reg-soc-type">城下町</div></div>
+          <div class="reg-soc" data-key="kobe" data-icon="🌊"><div class="reg-soc-icon">🌊</div><div class="reg-soc-name">神戸ひみつ結社</div><div class="reg-soc-type">海の街</div></div>
+        </div>
+        <button class="reg-btn" id="regSubmit" disabled>登録してはじめる</button>
+        <div class="reg-error" id="regError"></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /app-scale-wrapper -->
+
+<script src="assets/js/app.js?v=20260326m"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+{
+  "society_key": "matsumoto",
+  "name": "松本ひみつ結社",
+  "region_code": "202011",
+  "prefecture": "長野県",
+  "municipality": "松本市",
+  "template": "castle_town",
+  "theme_color": "#2E4053",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "国宝天守に潜む秘密組織。",
+  "local_cuisine": [
+    "信州そば",
+    "馬刺し",
+    "山賊焼き",
+    "野沢菜",
+    "塩イカ"
+  ],
+  "landmarks": [
+    "松本城",
+    "上高地",
+    "美ヶ原高原",
+    "開智学校"
+  ],
+  "annual_events": [
+    {
+      "name": "松本城太鼓まつり",
+      "month": 8
+    },
+    {
+      "name": "信州松本そまびと祭り",
+      "month": 9
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜だら",
+    "〜ずら",
+    "〜だに"
+  ],
+  "historical_figures": [
+    "島崎藤村",
+    "小林一茶"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "小笠原長時", "field": "武将・大名", "era": "戦国", "episode": "信濃国守護を務めた武将。松本平を統治した名家小笠原氏の当主で小笠原流礼法の源流に連なる人物" },
+    { "name": "田山花袋", "field": "小説家", "era": "明治-大正", "episode": "信州松本を愛した自然主義文学の代表作家。「蒲団」など日本近代文学を牽引した作品を発表した" },
+    { "name": "草間彌生", "field": "芸術家", "era": "昭和-現代", "episode": "松本市出身の世界的前衛芸術家。水玉や無限ネットの作風で知られ「草間彌生美術館」も松本に設立されている" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

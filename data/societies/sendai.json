@@ -1,0 +1,68 @@
+{
+  "society_key": "sendai",
+  "name": "仙台ひみつ結社",
+  "region_code": "041009",
+  "prefecture": "宮城県",
+  "municipality": "仙台市",
+  "template": "suburban",
+  "theme_color": "#1B4D2E",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "杜の都に潜む秘密組織。",
+  "local_cuisine": [
+    "牛タン",
+    "ずんだ餅",
+    "笹かまぼこ",
+    "仙台味噌"
+  ],
+  "landmarks": [
+    "仙台城跡",
+    "瑞鳳殿",
+    "定禅寺通",
+    "七夕飾り"
+  ],
+  "annual_events": [
+    {
+      "name": "仙台七夕まつり",
+      "month": 8
+    },
+    {
+      "name": "SENDAI光のページェント",
+      "month": 12
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜だっちゃ",
+    "おばんでした"
+  ],
+  "commercial_areas": [
+    "一番町",
+    "仙台駅前",
+    "国分町"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "伊達政宗", "field": "武将・大名", "era": "戦国-江戸", "episode": "仙台藩の初代藩主で「独眼竜」の異名を持つ戦国武将。仙台城を築き東北最大の城下町仙台を開いた英雄" },
+    { "name": "支倉常長", "field": "武士・外交使節", "era": "江戸初期", "episode": "伊達政宗の命でメキシコ・スペイン・ローマへ渡った慶長遣欧使節の主将。日本人初のヨーロッパ外交を行った" },
+    { "name": "川上善兵衛", "field": "醸造家・農業者", "era": "明治-大正", "episode": "宮城の気候に合ったブドウを研究し日本ワイン産業の先駆けとなった農業実践家。東北の農業振興に貢献した" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

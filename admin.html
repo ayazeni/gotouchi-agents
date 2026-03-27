@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>管理画面 — GLOCAL AGENTS</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: #F1F5F9;
+  color: #1E293B;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+h1 {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 6px;
+}
+.subtitle { font-size: 13px; color: #64748B; margin-bottom: 24px; }
+.section {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #E2E8F0;
+}
+.section h2 {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0F172A;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.stat-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.stat-box {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  padding: 14px 18px;
+  flex: 1;
+  text-align: center;
+}
+.stat-num {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #0F172A;
+}
+.stat-label { font-size: 11px; color: #64748B; margin-top: 4px; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+th {
+  background: #F8FAFC;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748B;
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 2px solid #E2E8F0;
+}
+td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #F1F5F9;
+  vertical-align: top;
+}
+tr:hover td { background: #F8FAFC; }
+.tag {
+  display: inline-block;
+  background: #DBEAFE;
+  color: #1E40AF;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-right: 3px;
+}
+.btn-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.btn {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.btn:active { opacity: 0.7; }
+.btn-primary { background: #0F172A; color: white; }
+.btn-danger { background: #EF4444; color: white; }
+.btn-outline { background: white; color: #0F172A; border: 1px solid #CBD5E1; }
+.empty { text-align: center; color: #94A3B8; padding: 30px; font-size: 14px; }
+.post-text { max-width: 250px; word-break: break-all; }
+.time-col { white-space: nowrap; font-size: 12px; color: #64748B; }
+</style>
+</head>
+<body>
+
+<h1>🕵️ GLOCAL AGENTS 管理画面</h1>
+<p class="subtitle">ユーザーのシェアログ・登録状況を確認する運用ツール（localStorage仮実装）</p>
+<!-- TODO(backend): このページを engame-core analytics ダッシュボード API に接続 -->
+
+<!-- 統計 -->
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="stat-num" id="statUsers">0</div>
+    <div class="stat-label">登録ユーザー</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num" id="statShares">0</div>
+    <div class="stat-label">シェア件数</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-num" id="statPoints">0</div>
+    <div class="stat-label">付与ポイント合計</div>
+  </div>
+</div>
+
+<!-- シェアログ -->
+<div class="section">
+  <h2>📣 シェアログ</h2>
+  <div class="btn-bar">
+    <button class="btn btn-primary" id="btnExportCSV">📥 CSVエクスポート</button>
+    <button class="btn btn-outline" id="btnRefresh">🔄 更新</button>
+    <button class="btn btn-danger" id="btnClearLogs">🗑 ログクリア</button>
+  </div>
+  <div id="logTable"></div>
+</div>
+
+<!-- 登録ユーザー -->
+<div class="section">
+  <h2>👥 登録ユーザー</h2>
+  <div id="userTable"></div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+
+  // TODO(backend): → GET /api/v1/admin/analytics/share-logs
+  function getShareLogs() {
+    try { return JSON.parse(localStorage.getItem('glocal_share_logs') || '[]'); }
+    catch(e) { return []; }
+  }
+
+  // TODO(backend): → GET /api/v1/admin/users
+  function getUsers() {
+    try {
+      var user = JSON.parse(localStorage.getItem('glocal_user') || 'null');
+      return user ? [user] : [];
+    } catch(e) { return []; }
+  }
+
+  function formatDate(iso) {
+    if (!iso) return '-';
+    var d = new Date(iso);
+    return d.getFullYear() + '/' +
+      String(d.getMonth()+1).padStart(2,'0') + '/' +
+      String(d.getDate()).padStart(2,'0') + ' ' +
+      String(d.getHours()).padStart(2,'0') + ':' +
+      String(d.getMinutes()).padStart(2,'0');
+  }
+
+  function renderStats() {
+    var logs = getShareLogs();
+    var users = getUsers();
+    document.getElementById('statUsers').textContent = users.length;
+    document.getElementById('statShares').textContent = logs.length;
+    var totalPts = logs.reduce(function(sum, l) { return sum + (l.points || 0); }, 0);
+    document.getElementById('statPoints').textContent = totalPts.toLocaleString();
+  }
+
+  function renderLogs() {
+    var logs = getShareLogs();
+    var el = document.getElementById('logTable');
+    if (!logs.length) {
+      el.innerHTML = '<div class="empty">シェアログはまだありません</div>';
+      return;
+    }
+    var html = '<table><thead><tr><th>ユーザー</th><th>結社</th><th>ミッションID</th><th>投稿テキスト</th><th>Xリンク</th><th>ポイント</th><th>日時</th></tr></thead><tbody>';
+    logs.slice().reverse().forEach(function(l) {
+      var linkCell = l.intent_url
+        ? '<a href="' + l.intent_url + '" target="_blank" style="color:#1D9BF0;font-size:12px;text-decoration:none;">🔗 Xで確認</a>'
+        : '<span style="color:#94A3B8;font-size:11px;">—</span>';
+      html += '<tr>' +
+        '<td>' + (l.user_name || '-') + '</td>' +
+        '<td><span class="tag">' + (l.user_society || '-') + '</span></td>' +
+        '<td style="font-size:11px;font-family:monospace;">' + (l.mission_id || '-') + '</td>' +
+        '<td class="post-text">' + (l.post_text || '').substring(0, 80) + '</td>' +
+        '<td>' + linkCell + '</td>' +
+        '<td>+' + (l.points || 0) + ' pt</td>' +
+        '<td class="time-col">' + formatDate(l.shared_at) + '</td></tr>';
+    });
+    html += '</tbody></table>';
+    el.innerHTML = html;
+  }
+
+  function renderUsers() {
+    var users = getUsers();
+    var el = document.getElementById('userTable');
+    if (!users.length) {
+      el.innerHTML = '<div class="empty">登録ユーザーはまだいません</div>';
+      return;
+    }
+    var html = '<table><thead><tr><th>ID</th><th>名前</th><th>結社</th><th>登録日時</th></tr></thead><tbody>';
+    users.forEach(function(u) {
+      html += '<tr>' +
+        '<td style="font-size:11px;font-family:monospace;">' + u.id + '</td>' +
+        '<td>' + u.name + '</td>' +
+        '<td><span class="tag">' + u.society + '</span></td>' +
+        '<td class="time-col">' + formatDate(u.created_at) + '</td></tr>';
+    });
+    html += '</tbody></table>';
+    el.innerHTML = html;
+  }
+
+  function exportCSV() {
+    var logs = getShareLogs();
+    if (!logs.length) { alert('エクスポートするデータがありません'); return; }
+    var header = 'ユーザーID,ユーザー名,結社,ミッションID,投稿テキスト,Xリンク,ポイント,日時\n';
+    var rows = logs.map(function(l) {
+      return [l.user_id, l.user_name, l.user_society, l.mission_id,
+        '"' + (l.post_text || '').replace(/"/g, '""') + '"',
+        l.intent_url || '', l.points, l.shared_at].join(',');
+    }).join('\n');
+    var bom = '\uFEFF';
+    var blob = new Blob([bom + header + rows], { type: 'text/csv;charset=utf-8;' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'share_logs_' + new Date().toISOString().slice(0,10) + '.csv';
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  function refresh() {
+    renderStats();
+    renderLogs();
+    renderUsers();
+  }
+
+  document.getElementById('btnExportCSV').addEventListener('click', exportCSV);
+  document.getElementById('btnRefresh').addEventListener('click', refresh);
+  document.getElementById('btnClearLogs').addEventListener('click', function() {
+    if (confirm('シェアログを全件削除しますか？')) {
+      localStorage.removeItem('glocal_share_logs');
+      refresh();
+    }
+  });
+
+  refresh();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+{
+  "society_key": "aizuwakamatsu",
+  "name": "会津若松ひみつ結社",
+  "region_code": "072048",
+  "prefecture": "福島県",
+  "municipality": "会津若松市",
+  "template": "castle_town",
+  "theme_color": "#6B2D2D",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "戦国の歴史が息づく城下町の秘密組織。",
+  "local_cuisine": [
+    "ソースカツ丼",
+    "こづゆ",
+    "わっぱ飯",
+    "馬刺し"
+  ],
+  "landmarks": [
+    "鶴ヶ城",
+    "白虎隊記念館",
+    "さざえ堂",
+    "飯盛山"
+  ],
+  "annual_events": [
+    {
+      "name": "会津まつり",
+      "month": 9
+    },
+    {
+      "name": "鶴ヶ城桜まつり",
+      "month": 4
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜だべ",
+    "おしょうしな"
+  ],
+  "historical_figures": [
+    "白虎隊",
+    "新島八重",
+    "松平容保"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "松平容保", "field": "政治家・武将", "era": "幕末", "episode": "会津藩第9代藩主。京都守護職として新選組を統括し、最後まで幕府への忠義を貫いた" },
+    { "name": "新島八重", "field": "教育者", "era": "幕末-明治", "episode": "戊辰戦争で鶴ヶ城に籠城して戦った女傑。後に京都で同志社女学校の設立に貢献した" },
+    { "name": "山川浩", "field": "軍人", "era": "明治", "episode": "会津藩士の出身。西南戦争で活躍し陸軍少将となった。会津の武士道精神を体現した人物" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

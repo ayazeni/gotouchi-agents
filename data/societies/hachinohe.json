@@ -1,0 +1,70 @@
+{
+  "society_key": "hachinohe",
+  "name": "八戸ひみつ結社",
+  "region_code": "022071",
+  "prefecture": "青森県",
+  "municipality": "八戸市",
+  "template": "coastal",
+  "theme_color": "#1B4F72",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "三陸の海の幸が集まる秘密組織。",
+  "local_cuisine": [
+    "八戸前沖サバ",
+    "いちご煮",
+    "せんべい汁",
+    "八戸ラーメン"
+  ],
+  "landmarks": [
+    "種差海岸",
+    "蕪島",
+    "八戸市水産科学館",
+    "南部工芸"
+  ],
+  "annual_events": [
+    {
+      "name": "八戸三社大祭",
+      "month": 8
+    },
+    {
+      "name": "八戸えんぶり",
+      "month": 2
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜だっちゃ",
+    "〜でぁ"
+  ],
+  "fish_species": [
+    "サバ",
+    "イカ",
+    "ウニ",
+    "アワビ",
+    "ホタテ"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "南部信直", "field": "武将・大名", "era": "戦国-江戸", "episode": "南部氏の統一を果たした戦国武将。八戸を含む南部藩の礎を築き、秀吉の天下統一後も南部の地を守った" },
+    { "name": "石井露月", "field": "俳人", "era": "明治-大正", "episode": "八戸出身の俳人。正岡子規の門下として活躍し、三陸の自然をモチーフにした数多くの俳句を残した" },
+    { "name": "浜田広介", "field": "童話作家", "era": "大正-昭和", "episode": "「泣いた赤鬼」で知られる童話作家。山形出身だが東北の自然と人情を愛し、八戸とも縁深い作品を残した" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

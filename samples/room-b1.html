@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<title>エージェントルーム — B案</title>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:#1B2B72; --navy-mid:#2A3E9E; --red:#E8003D;
+  --bg:#F4F5FA; --text:#1A1A2E; --muted:#6B7280; --border:#E5E7F0; --r:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{background:#181824;height:100%;}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--text);height:100%;display:flex;justify-content:center;background:#181824;}
+.app{width:390px;height:100vh;max-height:100vh;position:relative;overflow:hidden;}
+@media(max-width:430px){.app{width:100vw;}}
+
+/* ===== ルーム全画面背景 ===== */
+.room{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;}
+.room-bg{width:100%;height:100%;object-fit:cover;display:block;}
+
+/* ===== アバター ===== */
+.avatar-wrap{
+  position:absolute;z-index:10;cursor:pointer;
+  transition:transform 0.3s;
+  left:26%;bottom:11%;width:35%;
+}
+.avatar-wrap:hover{transform:scale(1.05);}
+.avatar-wrap img{width:100%;height:auto;display:block;position:absolute;bottom:0;left:0;}
+.avatar-open{opacity:1;position:relative;}
+.avatar-closed{opacity:0;}
+
+/* ===== ヘッダーバー ===== */
+.room-header{
+  position:absolute;top:0;left:0;right:0;z-index:20;
+  background:linear-gradient(rgba(27,43,114,0.9),transparent);
+  padding:10px 12px 24px;
+  display:flex;align-items:center;justify-content:space-between;
+}
+.header-left{display:flex;align-items:center;gap:8px;}
+.btn-back{
+  background:none;border:none;
+  color:white;font-size:20px;cursor:pointer;
+  padding:4px;opacity:0.8;transition:opacity 0.2s;
+}
+.btn-back:hover{opacity:1;}
+.agent-icon{width:40px;height:40px;border-radius:50%;border:2px solid rgba(255,255,255,0.8);box-shadow:0 2px 6px rgba(0,0,0,0.3);object-fit:cover;background:white;}
+.agent-info{color:white;font-family:'M PLUS Rounded 1c',sans-serif;}
+.agent-name{font-size:13px;font-weight:800;line-height:1.2;}
+.agent-sub{font-size:9px;font-weight:400;opacity:0.7;}
+.header-right{display:flex;gap:6px;}
+.btn-header{
+  background:rgba(255,255,255,0.15);backdrop-filter:blur(6px);
+  border:none;border-radius:20px;color:white;font-size:11px;
+  font-family:'M PLUS Rounded 1c',sans-serif;font-weight:700;
+  padding:7px 12px;cursor:pointer;transition:background 0.2s;
+}
+.btn-header:hover{background:rgba(255,255,255,0.3);}
+
+/* ===== 隠しオブジェクト（虫眼鏡で発見） ===== */
+.obj{position:absolute;z-index:5;pointer-events:none;}
+.obj-label{
+  position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%) scale(0.5);
+  background:rgba(27,43,114,0.9);color:white;font-size:11px;
+  font-family:'M PLUS Rounded 1c',sans-serif;font-weight:700;
+  padding:6px 14px;border-radius:12px;white-space:nowrap;
+  opacity:0;transition:all 0.3s ease;
+  pointer-events:none;
+  box-shadow:0 4px 16px rgba(0,0,0,0.3);
+  cursor:pointer;
+}
+/* 金庫ラベル: 右端見切れ防止→左に出す */
+.obj-safe .obj-label{left:auto;right:100%;top:50%;transform:translate(0,-50%) scale(0.5);}
+.obj-safe.discovered .obj-label{transform:translate(0,-50%) scale(1);}
+/* 机ラベル: 上に出す */
+.obj-desk .obj-label{top:auto;bottom:100%;left:50%;transform:translate(-50%,0) scale(0.5);}
+.obj-desk.discovered .obj-label{transform:translate(-50%,0) scale(1);}
+
+.obj.discovered .obj-label{
+  opacity:1;
+  pointer-events:auto;
+  animation:labelPulse 1.5s ease-in-out infinite;
+}
+@keyframes labelPulse{
+  0%,100%{box-shadow:0 4px 16px rgba(0,0,0,0.3);}
+  50%{box-shadow:0 4px 20px rgba(232,0,61,0.5),0 0 30px rgba(42,62,158,0.3);}
+}
+
+/* 洋風デフォルト位置 */
+.obj-safe{left:81%;top:51%;width:26%;height:10%;}
+.obj-desk{left:37%;top:62%;width:15%;height:6%;}
+
+/* ===== 虫眼鏡 ===== */
+.magnifier{
+  position:absolute;z-index:30;
+  width:70px;height:70px;
+  pointer-events:none;
+  transition:none;
+  will-change:transform;
+}
+.mag-glass{
+  width:70px;height:70px;
+  font-size:54px;
+  line-height:70px;
+  text-align:center;
+  filter:drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+  animation:magIdle 2s ease-in-out infinite;
+}
+@keyframes magIdle{
+  0%,100%{transform:rotate(-5deg);}
+  50%{transform:rotate(5deg);}
+}
+.mag-hint{
+  position:absolute;bottom:-18px;left:50%;transform:translateX(-50%);
+  font-size:8px;color:white;
+  font-family:'M PLUS Rounded 1c',sans-serif;font-weight:700;
+  text-shadow:0 1px 4px rgba(0,0,0,0.8);
+  white-space:nowrap;opacity:0.7;
+}
+/* 発見時の虫眼鏡 */
+.magnifier.found .mag-glass{
+  animation:magFound 0.3s ease;
+}
+@keyframes magFound{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.3);}
+  100%{transform:scale(1);}
+}
+
+/* ミニステータス（下部帯） */
+.mini-stats{
+  position:absolute;bottom:0;left:0;right:0;z-index:16;
+  display:flex;gap:12px;justify-content:center;
+  padding:8px 16px;
+  background:linear-gradient(transparent,rgba(27,43,114,0.9));
+  font-size:10px;color:rgba(255,255,255,0.8);
+  font-family:'M PLUS Rounded 1c',sans-serif;
+}
+.mini-stats strong{color:white;font-weight:800;}
+
+/* ===== パネル ===== */
+.panel-overlay{
+  position:fixed;top:0;left:0;right:0;bottom:0;
+  background:rgba(0,0,0,0.6);z-index:100;
+  display:none;align-items:center;justify-content:center;
+}
+.panel-overlay.show{display:flex;}
+.panel{
+  background:white;border-radius:var(--r);padding:24px;
+  width:85%;max-width:340px;max-height:70vh;overflow-y:auto;position:relative;
+  box-shadow:0 20px 60px rgba(0,0,0,0.3);
+}
+.panel-close{position:absolute;top:12px;right:12px;background:none;border:none;font-size:20px;cursor:pointer;color:var(--muted);}
+.panel h3{font-family:'M PLUS Rounded 1c',sans-serif;font-size:16px;color:var(--navy);margin-bottom:12px;}
+.panel p{font-size:13px;line-height:1.7;color:var(--text);}
+
+/* パネル内プログレスバー */
+.p-bar-bg{width:100%;height:10px;background:var(--border);border-radius:5px;overflow:hidden;margin:8px 0 4px;}
+.p-bar-fill{height:100%;background:linear-gradient(90deg,var(--navy-mid),var(--navy));border-radius:5px;}
+.p-stat-row{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);}
+
+/* パネル内履歴 */
+.p-history{margin:8px 0;}
+.p-history-item{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);font-size:12px;}
+.p-history-item:last-child{border-bottom:none;}
+.p-history-item .emoji{font-size:18px;}
+.p-history-item .date{color:var(--muted);font-size:10px;margin-left:auto;}
+
+/* パネル内ポイント */
+.p-pt-num{font-family:'M PLUS Rounded 1c',sans-serif;font-size:32px;font-weight:800;color:var(--navy);}
+.p-pt-tags{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap;}
+.p-pt-tag{font-size:10px;padding:4px 10px;border-radius:20px;font-weight:700;color:white;}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- 全画面ルーム背景 -->
+  <div class="room" id="room">
+    <img class="room-bg" id="roomBg" src="../assets/img/room/01.png" alt="アジト">
+  </div>
+
+  <!-- ヘッダー（1行） -->
+  <div class="room-header">
+    <div class="header-left">
+      <button class="btn-back" onclick="location.href='../index.html'" title="トップへ戻る">←</button>
+      <img class="agent-icon" src="../assets/img/icons/0001.png" alt="icon">
+      <div class="agent-info">
+        <div class="agent-name">テストエージェント</div>
+        <div class="agent-sub">#3tzm · 函館ひみつ結社</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <button class="btn-header" onclick="toggleBg()">🏠 模様替え</button>
+      <button class="btn-header" onclick="showPanel('settings')">⚙️</button>
+    </div>
+  </div>
+
+  <!-- アバター（まばたき） -->
+  <div class="avatar-wrap" id="avatarWrap">
+    <img class="avatar-open" id="avatarOpen" src="../assets/img/avatar/fox_open.png" alt="avatar">
+    <img class="avatar-closed" id="avatarClosed" src="../assets/img/avatar/fox_closed.png" alt="avatar blink">
+  </div>
+
+  <!-- 隠しオブジェクト（虫眼鏡で発見） -->
+  <div class="obj obj-safe" id="objSafe"><span class="obj-label" onclick="showPanel('points')">🔐 ポイント金庫</span></div>
+  <div class="obj obj-desk" id="objDesk"><span class="obj-label" onclick="showPanel('mission')">📋 ミッション記録</span></div>
+
+  <!-- 虫眼鏡 -->
+  <div class="magnifier" id="magnifier">
+    <div class="mag-glass">🔍</div>
+    <div class="mag-hint">ドラッグして探索</div>
+  </div>
+
+  <!-- ミニステータス帯 -->
+  <div class="mini-stats">
+    <span>📊 正解率 <strong>72%</strong></span>
+    <span>💎 <strong>2,480</strong> pt</span>
+  </div>
+
+</div>
+
+<!-- パネル -->
+<div class="panel-overlay" id="panelOverlay" onclick="closePanel(event)">
+  <div class="panel" id="panelContent"></div>
+</div>
+
+<script>
+// まばたき
+var avatarOpen=document.getElementById('avatarOpen'),avatarClosed=document.getElementById('avatarClosed'),blinking=false;
+function blink(){if(blinking)return;blinking=true;avatarOpen.style.opacity='0';avatarClosed.style.opacity='1';setTimeout(function(){avatarOpen.style.opacity='1';avatarClosed.style.opacity='0';blinking=false;},150);}
+function scheduleBlink(){setTimeout(function(){blink();scheduleBlink();},2000+Math.random()*3000);}
+scheduleBlink();
+document.getElementById('avatarWrap').addEventListener('click',function(){blink();setTimeout(blink,300);});
+
+// 背景切替 + オブジェクト位置連動
+var bgIndex=0;
+var bgs=['../assets/img/room/01.png','../assets/img/room/02.png'];
+var avatarPos=[
+  {left:'26%',bottom:'11%',width:'35%'},  // 洋風
+  {left:'23%',bottom:'48%',width:'35%'}   // 和風
+];
+var objPos=[
+  // 洋風
+  {safe:{left:'81%',top:'51%',width:'26%',height:'10%'}, desk:{left:'37%',top:'62%',width:'15%',height:'6%'}},
+  // 和風
+  {safe:{left:'86%',top:'66%',width:'20%',height:'10%'}, desk:{left:'44%',top:'58%',width:'14%',height:'7%'}}
+];
+
+function applyObjPos(idx){
+  var s=document.getElementById('objSafe'), d=document.getElementById('objDesk');
+  var sp=objPos[idx].safe, dp=objPos[idx].desk;
+  s.style.left=sp.left; s.style.top=sp.top; s.style.width=sp.width; s.style.height=sp.height;
+  s.style.right='auto'; s.style.bottom='auto';
+  d.style.left=dp.left; d.style.top=dp.top; d.style.width=dp.width; d.style.height=dp.height;
+  d.style.right='auto'; d.style.bottom='auto';
+}
+
+function toggleBg(){
+  bgIndex=(bgIndex+1)%bgs.length;
+  document.getElementById('roomBg').src=bgs[bgIndex];
+  var w=document.getElementById('avatarWrap'),p=avatarPos[bgIndex];
+  w.style.left=p.left;w.style.bottom=p.bottom;w.style.width=p.width;
+  applyObjPos(bgIndex);
+}
+
+// ===== 虫眼鏡ドラッグ＆発見 =====
+(function(){
+  var mag = document.getElementById('magnifier');
+  var app = document.querySelector('.app');
+  var objs = [document.getElementById('objSafe'), document.getElementById('objDesk')];
+  var dragging = false;
+  var magX = 50, magY = 200; // 初期位置
+
+  // 虫眼鏡初期位置
+  mag.style.left = magX + 'px';
+  mag.style.top = magY + 'px';
+
+  function getPos(e) {
+    var r = app.getBoundingClientRect();
+    var t = e.touches ? e.touches[0] : e;
+    return { x: t.clientX - r.left - 35, y: t.clientY - r.top - 35 };
+  }
+
+  function startDrag(e) {
+    e.preventDefault();
+    dragging = true;
+    mag.querySelector('.mag-hint').style.opacity = '0';
+  }
+  function moveDrag(e) {
+    if (!dragging) return;
+    e.preventDefault();
+    var p = getPos(e);
+    magX = Math.max(0, Math.min(p.x, app.offsetWidth - 70));
+    magY = Math.max(0, Math.min(p.y, app.offsetHeight - 70));
+    mag.style.left = magX + 'px';
+    mag.style.top = magY + 'px';
+    checkOverlap();
+  }
+  function endDrag() { dragging = false; }
+
+  // PC
+  mag.style.pointerEvents = 'auto';
+  mag.style.cursor = 'grab';
+  mag.addEventListener('mousedown', startDrag);
+  document.addEventListener('mousemove', moveDrag);
+  document.addEventListener('mouseup', endDrag);
+  // スマホ
+  mag.addEventListener('touchstart', startDrag, {passive:false});
+  document.addEventListener('touchmove', moveDrag, {passive:false});
+  document.addEventListener('touchend', endDrag);
+
+  // 虫眼鏡中心とオブジェクト領域の重なり判定
+  function checkOverlap() {
+    var magCX = magX + 35, magCY = magY + 35;
+    var appW = app.offsetWidth, appH = app.offsetHeight;
+
+    objs.forEach(function(obj) {
+      var oL = parseFloat(obj.style.left || getComputedStyle(obj).left) / 100 * appW;
+      var oT = parseFloat(obj.style.top || getComputedStyle(obj).top) / 100 * appH;
+      var oW = parseFloat(obj.style.width || getComputedStyle(obj).width) / 100 * appW;
+      var oH = parseFloat(obj.style.height || getComputedStyle(obj).height) / 100 * appH;
+
+      // % → px
+      var cs = obj.getBoundingClientRect();
+      var ar = app.getBoundingClientRect();
+      var objL = cs.left - ar.left;
+      var objT = cs.top - ar.top;
+      var objR = objL + cs.width;
+      var objB = objT + cs.height;
+
+      if (magCX > objL && magCX < objR && magCY > objT && magCY < objB) {
+        if (!obj.classList.contains('discovered')) {
+          obj.classList.add('discovered');
+          mag.classList.add('found');
+          setTimeout(function(){ mag.classList.remove('found'); }, 300);
+        }
+      } else {
+        obj.classList.remove('discovered');
+      }
+    });
+  }
+})();
+
+// パネル
+var panels={
+  mission:'<button class="panel-close" onclick="closePanel()">✕</button><h3>📋 ミッション記録</h3><div class="p-history"><div class="p-history-item"><span class="emoji">🧩</span>函館クイズ完了<span class="date">3/25</span></div><div class="p-history-item"><span class="emoji">📢</span>SNS拡散ミッション<span class="date">3/24</span></div><div class="p-history-item"><span class="emoji">📖</span>学習ミッション完了<span class="date">3/23</span></div></div><p style="font-size:11px;color:var(--muted);margin-top:8px;">完了: 12件 / 進行中: 3件<br>今月: 840pt獲得</p><div style="margin-top:12px"><p style="font-size:12px;font-weight:700;color:var(--navy);margin-bottom:4px;">📊 クイズ正解率</p><div class="p-bar-bg"><div class="p-bar-fill" style="width:72%"></div></div><div class="p-stat-row"><span>正解 36/50問</span><span style="font-weight:700;color:var(--navy)">72%</span></div></div>',
+
+  points:'<button class="panel-close" onclick="closePanel()">✕</button><h3>🔐 ポイント金庫</h3><div style="margin:12px 0"><span class="p-pt-num">2,480</span> <span style="font-size:14px;color:var(--muted)">pt</span></div><div class="p-pt-tags"><span class="p-pt-tag" style="background:var(--red)">🎁 Amazonギフト</span><span class="p-pt-tag" style="background:#2E7D32">🌿 PUC環境</span><span class="p-pt-tag" style="background:var(--navy)">🏘️ 地域通貨</span></div><p style="font-size:11px;color:var(--muted);margin-top:12px;">交換可能: 500pt〜</p>',
+
+  settings:'<button class="panel-close" onclick="closePanel()">✕</button><h3>⚙️ 設定</h3><p>アバター変更（準備中）<br>通知設定<br>アカウント情報</p>'
+};
+function showPanel(k){document.getElementById('panelContent').innerHTML=panels[k]||'';document.getElementById('panelOverlay').classList.add('show');}
+function closePanel(e){if(!e||e.target===document.getElementById('panelOverlay'))document.getElementById('panelOverlay').classList.remove('show');}
+</script>
+</body>
+</html>

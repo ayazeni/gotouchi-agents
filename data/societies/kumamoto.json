@@ -1,0 +1,71 @@
+{
+  "society_key": "kumamoto",
+  "name": "熊本ひみつ結社",
+  "region_code": "431005",
+  "prefecture": "熊本県",
+  "municipality": "熊本市",
+  "template": "onsen",
+  "theme_color": "#6E2C00",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "火の国に潜む秘密組織。",
+  "local_cuisine": [
+    "馬刺し",
+    "辛子れんこん",
+    "太平燕",
+    "天草大王",
+    "いきなり団子"
+  ],
+  "landmarks": [
+    "熊本城",
+    "阿蘇山",
+    "天草",
+    "水前寺成趣園",
+    "菊池渓谷"
+  ],
+  "annual_events": [
+    {
+      "name": "熊本城マラソン",
+      "month": 2
+    },
+    {
+      "name": "火の国まつり",
+      "month": 8
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜たい",
+    "〜ばい",
+    "くさ"
+  ],
+  "onsen_types": [
+    "単純温泉",
+    "炭酸水素塩泉",
+    "硫黄泉"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "加藤清正", "field": "武将・大名", "era": "戦国-江戸", "episode": "熊本城を築城した豊臣秀吉の重臣。朝鮮出兵でも活躍し「虎退治」伝説で知られる肥後の猛将" },
+    { "name": "宮本武蔵", "field": "剣豪・芸術家", "era": "江戸初期", "episode": "晩年を熊本で過ごした剣豪。熊本藩細川家に客将として招かれ「五輪書」を熊本の霊巌洞で執筆した" },
+    { "name": "横井小楠", "field": "思想家・政治家", "era": "幕末-明治", "episode": "熊本出身の開明的思想家。坂本龍馬にも影響を与えた進歩的な儒学者で、明治政府の参与として活躍した" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

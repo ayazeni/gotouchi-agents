@@ -1,0 +1,73 @@
+{
+  "society_key": "osaka",
+  "name": "大阪ひみつ結社",
+  "region_code": "271004",
+  "prefecture": "大阪府",
+  "municipality": "大阪市",
+  "template": "suburban",
+  "theme_color": "#922B21",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "食い倒れの街に潜む秘密組織。",
+  "local_cuisine": [
+    "たこ焼き",
+    "お好み焼き",
+    "串カツ",
+    "551の蓬莱",
+    "てっちり"
+  ],
+  "landmarks": [
+    "道頓堀",
+    "大阪城",
+    "通天閣",
+    "ユニバーサルスタジオジャパン",
+    "天王寺"
+  ],
+  "annual_events": [
+    {
+      "name": "天神祭",
+      "month": 7
+    },
+    {
+      "name": "岸和田だんじり祭",
+      "month": 9
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜やで",
+    "なんでやねん",
+    "ほんまかいな",
+    "いらち"
+  ],
+  "commercial_areas": [
+    "道頓堀",
+    "心斎橋",
+    "梅田",
+    "なんば"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "豊臣秀吉", "field": "武将・太閤", "era": "戦国-安土桃山", "episode": "大阪城を築いた天下人。大阪を天下の台所として整備し商業都市・大阪の基礎を作った日本統一の象徴" },
+    { "name": "近松門左衛門", "field": "劇作家", "era": "江戸", "episode": "大阪を拠点に活躍した「日本のシェイクスピア」。曾根崎心中など人形浄瑠璃・歌舞伎の傑作を多数生み出した" },
+    { "name": "松下幸之助", "field": "実業家", "era": "昭和", "episode": "大阪でパナソニック（松下電器）を創業した「経営の神様」。経営哲学は世界中で読まれ大阪の実業家精神の象徴となっている" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

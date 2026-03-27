@@ -1,0 +1,72 @@
+{
+  "society_key": "okinawa",
+  "name": "沖縄ひみつ結社",
+  "region_code": "471003",
+  "prefecture": "沖縄県",
+  "municipality": "那覇市",
+  "template": "coastal",
+  "theme_color": "#1A6B8A",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "琉球王国の歴史を継ぐ秘密組織。",
+  "local_cuisine": [
+    "ゴーヤーチャンプルー",
+    "沖縄そば",
+    "タコライス",
+    "ミミガー",
+    "海ぶどう"
+  ],
+  "landmarks": [
+    "首里城",
+    "美ら海水族館",
+    "万座毛",
+    "古宇利島",
+    "国際通り"
+  ],
+  "annual_events": [
+    {
+      "name": "那覇ハーリー",
+      "month": 5
+    },
+    {
+      "name": "首里城祭",
+      "month": 10
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "めんそーれ",
+    "なんくるないさ",
+    "はいさい"
+  ],
+  "fish_species": [
+    "グルクン",
+    "イラブチャー",
+    "ソデイカ",
+    "マグロ"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "尚巴志", "field": "国王", "era": "琉球王国", "episode": "三山分立していた沖縄を統一し琉球王国を建国した初代国王。首里城を王宮として東南アジアとの交易で繁栄を築いた" },
+    { "name": "護佐丸", "field": "武将", "era": "琉球王国", "episode": "中城城を築いた琉球最強の武将。尚泰久王に謀略で滅ぼされたが、その勇名は今も琉球の英雄として語り継がれる" },
+    { "name": "玉城朝薫", "field": "芸術家", "era": "琉球王国", "episode": "「組踊」を創始した琉球の宮廷芸術家。組踊は2010年にユネスコ無形文化遺産に登録され今も沖縄の誇りとなっている" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

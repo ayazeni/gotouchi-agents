@@ -1,0 +1,70 @@
+{
+  "society_key": "yamagata",
+  "name": "山形ひみつ結社",
+  "region_code": "060003",
+  "prefecture": "山形県",
+  "municipality": "山形市",
+  "template": "agricultural",
+  "theme_color": "#E74C3C",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "フルーツ王国の秘密組織。",
+  "local_cuisine": [
+    "芋煮",
+    "だし",
+    "冷やしラーメン",
+    "玉こんにゃく"
+  ],
+  "landmarks": [
+    "山寺（立石寺）",
+    "蔵王温泉",
+    "上杉神社",
+    "最上川"
+  ],
+  "annual_events": [
+    {
+      "name": "山形花笠まつり",
+      "month": 8
+    },
+    {
+      "name": "上杉まつり",
+      "month": 4
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜だべ",
+    "めんこい",
+    "はんでないか"
+  ],
+  "crops": [
+    "さくらんぼ",
+    "ラ・フランス",
+    "もも",
+    "米沢牛"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "上杉鷹山", "field": "大名・改革者", "era": "江戸", "episode": "米沢藩の名君。財政危機に陥った藩を「なせば成る」の精神で立て直した改革藩主。ジョン・F・ケネディが尊敬した日本人" },
+    { "name": "松尾芭蕉", "field": "俳人", "era": "江戸", "episode": "山形・立石寺（山寺）を訪れ「閑さや岩にしみ入る蝉の声」を詠んだ俳聖。山形が生んだ日本文学史上最高の名句の一つ" },
+    { "name": "最上義光", "field": "武将・大名", "era": "戦国-江戸", "episode": "出羽山形藩の初代藩主。関ヶ原では東軍に付き最上57万石の大大名となった。山形城の整備と最上川の航路開発に尽力した" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

@@ -1,0 +1,73 @@
+{
+  "society_key": "fukuoka",
+  "name": "福岡ひみつ結社",
+  "region_code": "401005",
+  "prefecture": "福岡県",
+  "municipality": "福岡市",
+  "template": "coastal",
+  "theme_color": "#C0392B",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "アジアの玄関口に潜む秘密組織。",
+  "local_cuisine": [
+    "博多ラーメン",
+    "もつ鍋",
+    "明太子",
+    "水炊き",
+    "屋台グルメ"
+  ],
+  "landmarks": [
+    "太宰府天満宮",
+    "博多祇園山笠",
+    "福岡城跡",
+    "海の中道",
+    "マリノアシティ"
+  ],
+  "annual_events": [
+    {
+      "name": "博多祇園山笠",
+      "month": 7
+    },
+    {
+      "name": "博多どんたく",
+      "month": 5
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜たい",
+    "〜ばい",
+    "なんばしよっと"
+  ],
+  "fish_species": [
+    "サバ",
+    "アジ",
+    "ウニ",
+    "アワビ",
+    "タコ"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "菅原道真", "field": "政治家・学者", "era": "平安", "episode": "学問の神様として祀られる太宰府の聖人。右大臣まで出世したが藤原氏の陰謀で太宰府に左遷され没した" },
+    { "name": "黒田如水（官兵衛）", "field": "武将・軍師", "era": "戦国-江戸", "episode": "福岡藩の礎を築いた名軍師。豊臣秀吉の天下統一を参謀として支え、九州平定でも活躍した" },
+    { "name": "玄奘三蔵（鑑真）", "field": "僧侶", "era": "奈良", "episode": "博多から上陸した唐の高僧。日本に戒律を伝えるため5度の失敗を乗り越え渡日、東大寺を拠点に仏教を広めた" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

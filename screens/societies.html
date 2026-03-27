@@ -1,0 +1,42 @@
+<!-- 結社画面（データ駆動: data/societies.json から動的生成） -->
+
+<!-- 結社を探す（セレクト式） -->
+<div class="sec">
+  <div class="sec-hd">
+    <div class="sec-title">🗺 結社を探す</div>
+  </div>
+  <select id="socSelect" style="width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:10px;font-size:14px;font-family:var(--font-b);color:var(--text);background:white;outline:none;box-sizing:border-box;cursor:pointer;appearance:auto;">
+    <option value="">結社を選択してください...</option>
+  </select>
+</div>
+
+<!-- ランキング TOP3 -->
+<div class="sec" style="position:relative;">
+  <img src="assets/img/kabe1.png" class="kabe-chara" style="position:absolute;top:-2px;right:63px;width:52px;height:auto;z-index:2;pointer-events:none;">
+  <div class="sec-hd">
+    <div class="sec-title">🏆 結社ランキング</div>
+  </div>
+  <div id="socRanking"></div>
+</div>
+
+<!-- あなたの所属結社 -->
+<div class="sec" style="position:relative;">
+  <img src="assets/img/kabe2.png" class="kabe-chara" style="position:absolute;top:5px;left:128px;width:50px;height:auto;z-index:2;pointer-events:none;">
+  <div class="sec-hd">
+    <div class="sec-title">🏠 あなたの所属結社</div>
+  </div>
+  <div id="socMyList"></div>
+</div>
+
+<!-- PRバナー -->
+<div class="sec">
+  <div style="border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(27,43,114,0.1);">
+    <img src="assets/img/banner.png?v=20260326b" alt="応援地域の結社を選ぼう" style="width:100%;display:block;">
+  </div>
+</div>
+
+<!-- 結社詳細モーダル -->
+<div id="socDetailOverlay" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:200;align-items:center;justify-content:center;">
+  <div id="socDetailModal" style="background:white;border-radius:16px;padding:20px;width:88%;max-width:360px;max-height:80vh;overflow-y:auto;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.3);scrollbar-width:none;">
+  </div>
+</div>

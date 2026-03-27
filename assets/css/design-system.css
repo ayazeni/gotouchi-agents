@@ -1,0 +1,41 @@
+/* ====================================
+   GLOCAL AGENTS — デザインシステム v1.0
+   CSS変数・リセット・タイポグラフィ
+   ==================================== */
+
+:root {
+  /* カラーパレット */
+  --navy:        #1B2B72;
+  --navy-mid:    #2A3E9E;
+  --red:         #E8003D;
+  --white:       #FFFFFF;
+  --bg:          #F4F5FA;
+  --lavender:    #E8EAFF;
+  --text:        #1A1A2E;
+  --muted:       #6B7280;
+  --border:      #E5E7F0;
+
+  /* カテゴリカラー */
+  --coastal:     #1B6CA8;
+  --mountain:    #2E7D32;
+  --castle:      #6D4C41;
+  --onsen:       #7B1FA2;
+  --agricultural:#E65100;
+  --suburban:    #0277BD;
+
+  /* 角丸 */
+  --r:           16px;
+  --r-sm:        10px;
+  --r-pill:      999px;
+
+  /* フォント */
+  --font-h:      'M PLUS Rounded 1c', 'Noto Sans JP', sans-serif;
+  --font-b:      'Noto Sans JP', sans-serif;
+
+  /* アプリサイズ */
+  --app-w:       390px;
+  --app-h:       844px;
+}
+
+/* リセット */
+* { box-sizing: border-box; margin: 0; padding: 0; }

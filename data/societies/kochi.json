@@ -1,0 +1,70 @@
+{
+  "society_key": "kochi",
+  "name": "高知ひみつ結社",
+  "region_code": "392014",
+  "prefecture": "高知県",
+  "municipality": "高知市",
+  "template": "coastal",
+  "theme_color": "#1D6A96",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "黒潮の恵みと坂本龍馬の故郷の秘密組織。",
+  "local_cuisine": [
+    "カツオのたたき",
+    "皿鉢料理",
+    "土佐文旦",
+    "芋けんぴ"
+  ],
+  "landmarks": [
+    "桂浜",
+    "高知城",
+    "四万十川",
+    "足摺岬"
+  ],
+  "annual_events": [
+    {
+      "name": "よさこい祭り",
+      "month": 8
+    },
+    {
+      "name": "土佐のおきゃく",
+      "month": 3
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜やき",
+    "〜ぜよ",
+    "〜やろ"
+  ],
+  "fish_species": [
+    "カツオ",
+    "ウツボ",
+    "アユ",
+    "アマゴ"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "坂本龍馬", "field": "武士・活動家", "era": "幕末", "episode": "高知・土佐出身の幕末の英雄。薩長同盟を仲介し海援隊を創設。「日本を今一度せんたくいたし申候」の言葉を残した" },
+    { "name": "山内一豊", "field": "武将・大名", "era": "戦国-江戸", "episode": "土佐藩初代藩主。関ヶ原後に土佐24万石を拝領し高知城を築城。妻の内助の功の逸話でも知られる" },
+    { "name": "岩崎弥太郎", "field": "実業家", "era": "明治", "episode": "高知・安芸出身の三菱財閥の創始者。幕末の混乱期から頭角を現し日本の近代海運業・財閥経済の礎を築いた" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

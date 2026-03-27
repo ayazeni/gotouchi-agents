@@ -1,0 +1,90 @@
+/* ====================================
+   レイアウト — PC中央縮小追従 & モバイル全画面
+   ==================================== */
+
+html {
+  background: #181824;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  font-family: var(--font-b);
+  color: var(--text);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #181824;
+  overflow: hidden;
+}
+
+/* アプリラッパー（PC: ビューポート高さに追従） */
+.app-scale-wrapper {
+  width: var(--app-w);
+  height: 100vh;
+  max-height: 100vh;
+  flex-shrink: 0;
+  transform-origin: top center;
+  background: var(--bg);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 80px rgba(27,43,114,0.5), 0 0 0 1px rgba(255,255,255,0.05);
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* スマホ: 全画面 */
+@media (max-width: 430px) {
+  html, body { background: var(--bg); overflow: auto; }
+  .app-scale-wrapper {
+    width: 100vw;
+    height: 100dvh;
+    min-height: -webkit-fill-available;
+    box-shadow: none;
+    border-radius: 0;
+    transform: none !important;
+  }
+}
+
+/* スクロール可能なコンテンツ領域 */
+.app-scroll {
+  width: 100%;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  background: var(--bg);
+}
+.app-scroll::-webkit-scrollbar { display: none; }
+
+/* ボディ */
+.app-body {
+  padding: 16px 16px 24px;
+  box-sizing: border-box;
+}
+
+/* セクション共通 */
+.sec { margin-bottom: 22px; }
+.sec-hd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.sec-title {
+  font-family: var(--font-h);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.sec-more {
+  font-size: 11px;
+  color: var(--muted);
+  font-family: var(--font-h);
+  text-decoration: none;
+}

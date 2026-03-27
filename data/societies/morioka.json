@@ -1,0 +1,69 @@
+{
+  "society_key": "morioka",
+  "name": "盛岡ひみつ結社",
+  "region_code": "031000",
+  "prefecture": "岩手県",
+  "municipality": "盛岡市",
+  "template": "castle_town",
+  "theme_color": "#5D4037",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "南部藩の城下町に潜む秘密組織。",
+  "local_cuisine": [
+    "わんこそば",
+    "じゃじゃ麺",
+    "冷麺",
+    "盛岡三大麺"
+  ],
+  "landmarks": [
+    "盛岡城跡",
+    "岩手銀行赤レンガ館",
+    "石割桜",
+    "小岩井農場"
+  ],
+  "annual_events": [
+    {
+      "name": "さんさ踊り",
+      "month": 8
+    },
+    {
+      "name": "チャグチャグ馬コ",
+      "month": 6
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜だべ",
+    "いぎなり",
+    "あずましい"
+  ],
+  "historical_figures": [
+    "新渡戸稲造",
+    "宮沢賢治",
+    "石川啄木"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "宮沢賢治", "field": "詩人・童話作家", "era": "大正-昭和", "episode": "岩手・花巻出身の詩人。「銀河鉄道の夜」「注文の多い料理店」など今も愛される作品を残し、農業指導にも情熱を注いだ" },
+    { "name": "新渡戸稲造", "field": "教育者・思想家", "era": "明治-大正", "episode": "盛岡出身の国際的教育者。「武士道」を英語で著し日本精神を世界に紹介。旧5000円札の肖像にもなった" },
+    { "name": "石川啄木", "field": "歌人・詩人", "era": "明治", "episode": "岩手・盛岡に学んだ歌人。「一握の砂」「悲しき玩具」で近代短歌を革新し、函館・東京での放浪生活を詠んだ天才" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

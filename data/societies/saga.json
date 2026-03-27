@@ -1,0 +1,70 @@
+{
+  "society_key": "saga",
+  "name": "佐賀ひみつ結社",
+  "region_code": "411005",
+  "prefecture": "佐賀県",
+  "municipality": "佐賀市",
+  "template": "agricultural",
+  "theme_color": "#85C1E9",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "有田焼の美が潜む秘密組織。",
+  "local_cuisine": [
+    "呼子のイカ",
+    "佐賀牛",
+    "シシリアンライス",
+    "有田焼カレー"
+  ],
+  "landmarks": [
+    "吉野ヶ里遺跡",
+    "有田陶磁器の里",
+    "唐津城",
+    "嬉野温泉"
+  ],
+  "annual_events": [
+    {
+      "name": "唐津くんち",
+      "month": 11
+    },
+    {
+      "name": "有田陶器市",
+      "month": 5
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜たい",
+    "〜ばい",
+    "〜くさ"
+  ],
+  "crops": [
+    "みかん",
+    "いちご",
+    "玉ねぎ",
+    "海苔"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "鍋島直茂", "field": "武将・大名", "era": "戦国-江戸", "episode": "佐賀藩の実質的な礎を築いた武将。朝鮮出兵で陶工を連れ帰り、後の有田焼・伊万里焼の誕生に貢献した" },
+    { "name": "大隈重信", "field": "政治家・教育者", "era": "明治", "episode": "佐賀市出身の明治の元勲。早稲田大学を創設し「立憲改進党」を結成した日本近代政治・教育の先駆者" },
+    { "name": "江藤新平", "field": "政治家", "era": "明治", "episode": "佐賀出身の明治政府の初代司法卿。近代的な司法制度を整備した法律家。佐賀の乱を起こし非業の死を遂げた" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

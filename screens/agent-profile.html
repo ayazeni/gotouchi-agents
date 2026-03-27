@@ -1,0 +1,235 @@
+<!-- エージェントルーム（B案ベース v2） -->
+<div class="room-wrapper" id="agentRoom">
+  <!-- 背景 -->
+  <div class="room-bg">
+    <img id="roomBgImg" src="assets/img/room/01.png" alt="アジト">
+  </div>
+  <div class="room-vignette"></div>
+
+  <!-- エージェント情報バー（左固定：アイコン＋名前） -->
+  <div class="room-agent-bar">
+    <img id="roomIconImg" class="room-agent-icon" src="assets/img/avatars/0003.png" alt="" onclick="openRoomPanel('profile')">
+    <div class="room-agent-info">
+      <div class="room-agent-name" id="roomAgentName">エージェント・キツネ</div>
+      <div class="room-agent-sub">🌊 函館結社 · Lv.7</div>
+    </div>
+  </div>
+
+  <!-- アバター（全体シルエット — 背景空きスペースに配置） -->
+  <div class="room-character pos-western" id="roomCharacter">
+    <img id="roomCharImg" src="assets/img/characters/fox.png" alt="キャラクター">
+  </div>
+
+  <!-- ホットスポット -->
+  <div class="hotspot hs-map" onclick="openRoomPanel('badge')">
+    <div class="hs-inner">🎖️</div>
+    <span class="hs-label">バッジ棚</span>
+  </div>
+  <div class="hotspot hs-cork" onclick="openRoomPanel('activity')">
+    <div class="hs-inner">📋</div>
+    <span class="hs-label">活動履歴</span>
+  </div>
+  <div class="hotspot hs-monitor" onclick="openRoomPanel('stats')">
+    <div class="hs-inner">🖥️</div>
+    <span class="hs-label">データ端末</span>
+  </div>
+  <div class="hotspot hs-safe" onclick="openRoomPanel('points')">
+    <div class="hs-inner">💎</div>
+    <span class="hs-label">ポイント</span>
+  </div>
+</div>
+
+<!-- パネル背景 -->
+<div class="room-backdrop" id="roomBackdrop" onclick="closeRoomPanel()"></div>
+
+<!-- バッジパネル -->
+<div class="room-panel" id="rpanel-badge">
+  <div class="rp-handle"></div>
+  <div class="rp-header">🎖️ 獲得バッジ (4/6)</div>
+  <div class="rp-body">
+    <div class="rp-badge-grid">
+      <div class="rp-badge">🌊<br><small>海の証 ✅</small></div>
+      <div class="rp-badge">⛰️<br><small>山の証 ✅</small></div>
+      <div class="rp-badge">🏯<br><small>城の証 ✅</small></div>
+      <div class="rp-badge">♨️<br><small>湯の証 ✅</small></div>
+      <div class="rp-badge locked">🌾<br><small>畑の証 🔒</small></div>
+      <div class="rp-badge locked">🏙️<br><small>街の証 🔒</small></div>
+    </div>
+  </div>
+</div>
+
+<!-- 統計パネル -->
+<div class="room-panel" id="rpanel-stats">
+  <div class="rp-handle"></div>
+  <div class="rp-header">📊 エージェント統計</div>
+  <div class="rp-body">
+    <div class="rp-stat"><span>クイズ正解率</span><strong>73% (11/15)</strong></div>
+    <div class="rp-bar"><div class="rp-bar-fill" style="width:73%"></div></div>
+    <div class="rp-stat"><span>SNSシェア</span><strong>8回</strong></div>
+    <div class="rp-bar"><div class="rp-bar-fill" style="width:40%"></div></div>
+    <div class="rp-stat"><span>連続ログイン</span><strong>12日</strong></div>
+    <div class="rp-bar"><div class="rp-bar-fill" style="width:60%"></div></div>
+    <div class="rp-stat"><span>得意ジャンル</span><strong>食べ物 › 歴史 › 文化</strong></div>
+  </div>
+</div>
+
+<!-- 活動履歴パネル -->
+<div class="room-panel" id="rpanel-activity">
+  <div class="rp-handle"></div>
+  <div class="rp-header">🗄️ 最近の活動</div>
+  <div class="rp-body">
+    <div class="rp-activity">函館クイズ「イカの名物料理」正解 <b>+30pt</b><span>3/25</span></div>
+    <div class="rp-activity">函館SNS拡散ミッション完了 <b>+50pt</b><span>3/25</span></div>
+    <div class="rp-activity">草津クイズ「温泉まんじゅう」正解 <b>+30pt</b><span>3/24</span></div>
+  </div>
+</div>
+
+<!-- ポイントパネル -->
+<div class="room-panel" id="rpanel-points">
+  <div class="rp-handle"></div>
+  <div class="rp-header">💎 ポイント</div>
+  <div class="rp-body">
+    <div class="rp-points-big">2,480 <small>pt</small></div>
+    <div style="text-align:center;font-size:11px;color:rgba(255,255,255,0.5);margin-bottom:12px;">利用可能ポイント</div>
+    <div class="rp-points-btns">
+      <button>Amazonギフト</button>
+      <button>PUC環境</button>
+      <button>地域通貨</button>
+    </div>
+  </div>
+</div>
+
+<!-- プロフィール編集パネル -->
+<div class="room-panel" id="rpanel-profile">
+  <div class="rp-handle"></div>
+  <div class="rp-header">🔧 プロフィール編集</div>
+  <div class="rp-body">
+    <label class="rp-label">アイコン変更</label>
+    <div class="rp-avatar-grid" id="avatarGrid"></div>
+    <label class="rp-label">キャラクター変更</label>
+    <div class="rp-char-select" id="charSelect"></div>
+    <label class="rp-label">背景セレクト</label>
+    <div class="rp-bg-select">
+      <div class="rp-bg-thumb selected" onclick="selectRoomBg('01.png', this)">
+        <img src="assets/img/room/01.png" alt="洋風アジト">
+      </div>
+      <div class="rp-bg-thumb" onclick="selectRoomBg('02.png', this)">
+        <img src="assets/img/room/02.png" alt="和風アジト">
+      </div>
+    </div>
+    <label class="rp-label">ひとこと</label>
+    <textarea class="rp-comment" rows="2" placeholder="海の街で何かを探している…">海の街で何かを探している…</textarea>
+  </div>
+</div>
+
+<script>
+(function(){
+  var chars = ['fox','dog','cat','deer'];
+  var charNames = ['キツネ','犬','猫','鹿'];
+
+  // アイコングリッド生成（50体）
+  var grid = document.getElementById('avatarGrid');
+  if(grid){
+    for(var i=1;i<=50;i++){
+      var num = ('000'+i).slice(-4);
+      var div = document.createElement('div');
+      div.className = 'rp-avatar-thumb' + (i===3?' selected':'');
+      div.onclick = (function(n,el){ return function(){ selectIcon(n,el); }; })(num,div);
+      div.innerHTML = '<img src="assets/img/avatars/'+num+'.png">';
+      grid.appendChild(div);
+    }
+  }
+
+  // キャラクターセレクト生成
+  var csel = document.getElementById('charSelect');
+  if(csel){
+    chars.forEach(function(c, idx){
+      var div = document.createElement('div');
+      div.className = 'rp-char-thumb' + (c==='fox'?' selected':'');
+      div.onclick = function(){ selectChar(c, div); };
+      div.innerHTML = '<img src="assets/img/characters/'+c+'.png"><small>'+charNames[idx]+'</small>';
+      csel.appendChild(div);
+    });
+  }
+
+  // ユーザーデータ復元
+  try {
+    var agent = JSON.parse(localStorage.getItem('agent'));
+    if(agent && agent.name) {
+      var nameEl = document.getElementById('roomAgentName');
+      if(nameEl) nameEl.textContent = agent.name;
+    }
+    var savedBg = localStorage.getItem('roomBg');
+    if(savedBg) {
+      var bgImg = document.getElementById('roomBgImg');
+      if(bgImg) bgImg.src = 'assets/img/room/' + savedBg;
+      var ch = document.getElementById('roomCharacter');
+      if(ch){ ch.classList.remove('pos-western','pos-japanese'); ch.classList.add(savedBg === '02.png' ? 'pos-japanese' : 'pos-western'); }
+    }
+    var savedIcon = localStorage.getItem('roomAvatar');
+    if(savedIcon) {
+      var ic = document.getElementById('roomIconImg');
+      if(ic) ic.src = 'assets/img/avatars/' + savedIcon;
+    }
+    var savedChar = localStorage.getItem('roomChar');
+    if(savedChar) {
+      var ch = document.getElementById('roomCharImg');
+      if(ch) ch.src = 'assets/img/characters/' + savedChar;
+    }
+  } catch(e){}
+})();
+
+var activeRoomPanel = null;
+
+function openRoomPanel(type){
+  closeRoomPanel();
+  var p = document.getElementById('rpanel-'+type);
+  var b = document.getElementById('roomBackdrop');
+  if(p){
+    requestAnimationFrame(function(){
+      b.classList.add('active');
+      p.classList.add('active');
+      activeRoomPanel = p;
+    });
+  }
+}
+
+function closeRoomPanel(){
+  var b = document.getElementById('roomBackdrop');
+  if(b) b.classList.remove('active');
+  if(activeRoomPanel){
+    activeRoomPanel.classList.remove('active');
+    activeRoomPanel = null;
+  }
+}
+
+function selectIcon(num, el){
+  document.querySelectorAll('.rp-avatar-thumb.selected').forEach(function(e){e.classList.remove('selected');});
+  el.classList.add('selected');
+  var ic = document.getElementById('roomIconImg');
+  if(ic) ic.src = 'assets/img/avatars/'+num+'.png';
+  localStorage.setItem('roomAvatar', num+'.png');
+}
+
+function selectChar(name, el){
+  document.querySelectorAll('.rp-char-thumb.selected').forEach(function(e){e.classList.remove('selected');});
+  el.classList.add('selected');
+  var ch = document.getElementById('roomCharImg');
+  if(ch) ch.src = 'assets/img/characters/'+name+'.png';
+  localStorage.setItem('roomChar', name+'.png');
+}
+
+function selectRoomBg(file, el){
+  document.querySelectorAll('.rp-bg-thumb.selected').forEach(function(e){e.classList.remove('selected');});
+  el.classList.add('selected');
+  var img = document.getElementById('roomBgImg');
+  if(img) img.src = 'assets/img/room/'+file;
+  localStorage.setItem('roomBg', file);
+  // キャラ位置を背景に合わせて切替
+  var ch = document.getElementById('roomCharacter');
+  if(ch){
+    ch.classList.remove('pos-western','pos-japanese');
+    ch.classList.add(file === '02.png' ? 'pos-japanese' : 'pos-western');
+  }
+}
+</script>

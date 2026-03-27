@@ -1,0 +1,70 @@
+{
+  "society_key": "beppu",
+  "name": "別府ひみつ結社",
+  "region_code": "442011",
+  "prefecture": "大分県",
+  "municipality": "別府市",
+  "template": "onsen",
+  "theme_color": "#E8DAEF",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "地獄の温泉に潜む秘密組織。",
+  "local_cuisine": [
+    "とり天",
+    "だんご汁",
+    "関サバ",
+    "かぼすグルメ"
+  ],
+  "landmarks": [
+    "別府地獄めぐり",
+    "鉄輪温泉",
+    "由布院",
+    "湯けむり展望台"
+  ],
+  "annual_events": [
+    {
+      "name": "別府八湯温泉まつり",
+      "month": 4
+    },
+    {
+      "name": "別府クリスマスファンタジー",
+      "month": 12
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜じゃ",
+    "〜けん",
+    "おおいた弁"
+  ],
+  "onsen_types": [
+    "炭酸水素塩泉",
+    "硫黄泉",
+    "食塩泉",
+    "放射能泉"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "油屋熊八", "field": "実業家", "era": "明治-大正", "episode": "別府温泉観光の父。「山は富士、海は瀬戸内、湯は別府」の宣伝文句で別府を全国的な観光地に育て上げた" },
+    { "name": "ジョサイア・コンドル", "field": "建築家", "era": "明治", "episode": "大分・別府地域に洋風建築を数多く残したイギリス人建築家。日本近代建築の礎を築いた" },
+    { "name": "帆足万里", "field": "儒学者・蘭学者", "era": "江戸後期", "episode": "豊後国出身の思想家。西洋の知識を積極的に学び、幕末の開明的な儒学者として知られる" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

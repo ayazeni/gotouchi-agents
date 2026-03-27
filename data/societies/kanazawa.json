@@ -1,0 +1,69 @@
+{
+  "society_key": "kanazawa",
+  "name": "金沢ひみつ結社",
+  "region_code": "172014",
+  "prefecture": "石川県",
+  "municipality": "金沢市",
+  "template": "castle_town",
+  "theme_color": "#1F618D",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "加賀百万石の城下町に潜む秘密組織。",
+  "local_cuisine": [
+    "加賀料理",
+    "のどぐろ",
+    "金沢カレー",
+    "治部煮",
+    "柿の葉寿司"
+  ],
+  "landmarks": [
+    "兼六園",
+    "金沢城",
+    "ひがし茶屋街",
+    "武家屋敷跡野村家"
+  ],
+  "annual_events": [
+    {
+      "name": "百万石まつり",
+      "month": 6
+    },
+    {
+      "name": "金沢おどり",
+      "month": 10
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜やろ",
+    "〜ちゃ",
+    "きのどくな"
+  ],
+  "historical_figures": [
+    "前田利家",
+    "鈴木大拙"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "前田利家", "field": "武将・大名", "era": "戦国-江戸", "episode": "加賀藩の祖。織田信長・豊臣秀吉に仕え百万石の大大名となる。金沢城と兼六園の礎を築いた" },
+    { "name": "鈴木大拙", "field": "仏教学者・哲学者", "era": "明治-昭和", "episode": "金沢出身の禅仏教の世界的権威。英文で禅を紹介し西洋にZENブームをもたらした日本思想の代表者" },
+    { "name": "西田幾多郎", "field": "哲学者", "era": "明治-昭和", "episode": "石川・宇ノ気町出身の日本を代表する哲学者。「善の研究」で日本独自の哲学を確立した思想の巨人" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

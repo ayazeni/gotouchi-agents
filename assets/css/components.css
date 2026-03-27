@@ -1,0 +1,1096 @@
+/* ====================================
+   コンポーネント — ステータスバー・ヘッダー・
+   ミッションカード・結社・ランキング・ポイント交換
+   ==================================== */
+
+/* ==== ステータスバー ==== */
+.status-bar {
+  background: var(--navy);
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.status-bar .time {
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: var(--font-h);
+}
+.status-bar .icons {
+  color: white;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ==== ヘッダー ==== */
+.app-header {
+  background: var(--navy);
+  padding: 0 16px 18px;
+  color: white;
+  position: sticky;
+  top: 44px;
+  z-index: 49;
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 14px;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-h);
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+.logo-mark {
+  width: 32px; height: 32px;
+  background: white;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 17px;
+}
+/* ロゴ画像（半透明白背景パッド） */
+.logo-wrap {
+  background: rgba(255,255,255,0.75);
+  border-radius: 10px;
+  padding: 6px 14px;
+  display: flex;
+  align-items: center;
+}
+.logo-img {
+  height: 34px;
+  width: auto;
+  display: block;
+}
+.header-agent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.agent-avatar {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  background: var(--lavender);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+  border: 2px solid rgba(255,255,255,0.25);
+}
+.agent-info { text-align: right; }
+.agent-name {
+  font-family: var(--font-h);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.agent-id { font-size: 10px; opacity: 0.6; }
+
+/* ポイントボックス */
+.points-box {
+  background: rgba(255,255,255,0.1);
+  border-radius: 14px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.points-left { flex: 1; }
+.points-label { font-size: 11px; opacity: 0.7; margin-bottom: 3px; }
+.points-num {
+  font-family: var(--font-h);
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1;
+}
+.points-unit { font-size: 13px; opacity: 0.8; margin-left: 2px; }
+.points-today {
+  background: var(--red);
+  border-radius: var(--r-pill);
+  padding: 7px 14px;
+  text-align: center;
+  font-family: var(--font-h);
+}
+.points-today-up { font-size: 10px; opacity: 0.85; }
+.points-today-num { font-size: 15px; font-weight: 800; display: block; line-height: 1.2; }
+
+/* ==== 結社タブ ==== */
+.society-tabs {
+  background: white;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 0 8px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 205px;
+  z-index: 48;
+}
+.society-tabs::-webkit-scrollbar { display: none; }
+.stab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px;
+  white-space: nowrap;
+  font-family: var(--font-h);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  border-bottom: 2.5px solid transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.stab.active { color: var(--navy); border-bottom-color: var(--navy); }
+.stab-icon {
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px;
+}
+.stab-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--red);
+}
+
+/* ==== ミッションカード ==== */
+.mcard {
+  background: white;
+  border-radius: var(--r);
+  padding: 16px;
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: visible;
+  margin-bottom: 12px;
+}
+.mcard::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 5px;
+}
+.mcard.quiz  { background: #F0F4FF; border-color: #C7D6F5; }
+.mcard.sns   { background: #FFF5F7; border-color: #FFD6E0; }
+.mcard.study { background: #F5F3FF; border-color: #DDD6FE; }
+.mcard.quiz::before  { background: var(--navy); }
+.mcard.sns::before   { background: var(--red); }
+.mcard.study::before { background: #7C3AED; }
+
+.mcard-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.mtype {
+  font-family: var(--font-h);
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.mcard.quiz  .mtype { color: var(--navy); }
+.mcard.sns   .mtype { color: var(--red); }
+.mcard.study .mtype { color: #7C3AED; }
+
+.mpts {
+  font-family: var(--font-h);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--r-pill);
+}
+.mcard.quiz  .mpts { background: var(--lavender); color: var(--navy); }
+.mcard.sns   .mpts { background: #FEE2E9; color: var(--red); }
+.mcard.study .mpts { background: #EDE9FE; color: #7C3AED; }
+
+.msociety {
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.mq {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.55;
+  margin-bottom: 0;
+}
+
+/* クイズ選択肢 */
+.choices { display: flex; flex-direction: column; gap: 7px; }
+.choice {
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  transition: all 0.18s;
+}
+.choice:active { transform: scale(0.98); }
+.choice.correct { background: #D1FAE5; border-color: #6EE7B7; }
+.clabel {
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.9);
+  border: 1.5px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 700;
+  font-family: var(--font-h);
+  flex-shrink: 0;
+}
+.choice.correct .clabel { background: #065F46; color: white; border-color: #065F46; }
+
+/* SNS型 */
+.sns-body {
+  background: #FFF5F7;
+  border: 1px solid #FFD6E0;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #5A1C30;
+  margin-bottom: 12px;
+}
+.sns-tags { color: var(--red); font-weight: 500; }
+
+.btn-share {
+  width: 100%;
+  background: var(--red);
+  color: white;
+  font-family: var(--font-h);
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: var(--r-pill);
+  padding: 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: opacity 0.18s;
+}
+.btn-share:active { opacity: 0.82; }
+
+/* 学習型 */
+.study-body {
+  background: #F5F3FF;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #3D1F70;
+  margin-bottom: 12px;
+}
+.study-input {
+  width: 100%;
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 13px;
+  font-size: 13px;
+  font-family: var(--font-b);
+  color: var(--text);
+  resize: none;
+  outline: none;
+  display: block;
+}
+.study-input:focus { border-color: #7C3AED; }
+
+.btn-post {
+  width: 100%;
+  margin-top: 8px;
+  background: #7C3AED;
+  color: white;
+  font-family: var(--font-h);
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: var(--r-pill);
+  padding: 12px;
+  cursor: pointer;
+  transition: opacity 0.18s;
+}
+.btn-post:active { opacity: 0.82; }
+
+/* ==== 結社カード ==== */
+.soc-card {
+  background: white;
+  border-radius: var(--r);
+  padding: 14px;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.soc-icon {
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.soc-info { flex: 1; min-width: 0; }
+.soc-name {
+  font-family: var(--font-h);
+  font-size: 14px;
+  font-weight: 700;
+}
+.soc-meta { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.soc-right { text-align: right; flex-shrink: 0; }
+.soc-rank {
+  font-family: var(--font-h);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1;
+}
+.soc-rlabel { font-size: 10px; color: var(--muted); }
+
+/* ==== バッジ ==== */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-family: var(--font-h);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: var(--r-pill);
+}
+.b-navy   { background: var(--navy); color: white; }
+.b-red    { background: var(--red); color: white; }
+.b-spy    { background: #FEF3C7; color: #92400E; }
+.b-member { background: var(--lavender); color: var(--navy); }
+.b-ok     { background: #D1FAE5; color: #065F46; }
+
+/* ==== ランキング ==== */
+.rank-item {
+  background: white;
+  border-radius: 12px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 8px;
+}
+.rnum {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-h);
+  font-size: 12px; font-weight: 800;
+  flex-shrink: 0;
+}
+.rnum.g1 { background: #FEF3C7; color: #7A5C00; }
+.rnum.g2 { background: #F1F5F9; color: #475569; }
+.rnum.g3 { background: #FEF0E8; color: #7C3D15; }
+.rnum.gn { background: var(--bg); color: var(--muted); }
+.rname { font-family: var(--font-h); font-size: 13px; font-weight: 700; flex: 1; }
+.rpts { font-family: var(--font-h); font-size: 13px; font-weight: 800; color: var(--navy); }
+
+/* ==== ポイント交換バナー ==== */
+.exchange-card {
+  background: var(--navy);
+  border-radius: var(--r);
+  padding: 16px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.ex-label { font-size: 11px; opacity: 0.7; margin-bottom: 4px; }
+.ex-num {
+  font-family: var(--font-h);
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1;
+}
+.ex-options {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.ex-opt {
+  background: rgba(255,255,255,0.15);
+  border-radius: var(--r-pill);
+  padding: 4px 10px;
+  font-family: var(--font-h);
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.ex-opt.active { background: rgba(232,0,61,0.6); }
+.ex-btn {
+  background: white;
+  color: var(--navy);
+  font-family: var(--font-h);
+  font-size: 13px;
+  font-weight: 800;
+  border: none;
+  border-radius: var(--r-pill);
+  padding: 10px 16px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: opacity 0.18s;
+}
+.ex-btn:active { opacity: 0.8; }
+
+/* ==== 登録画面 ==== */
+.register-screen {
+  padding: 40px 20px 30px;
+  text-align: center;
+}
+.reg-logo {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+.reg-title {
+  font-family: var(--font-h);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.reg-sub {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+.reg-form { text-align: left; }
+.reg-label {
+  font-family: var(--font-h);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--navy);
+  display: block;
+  margin-bottom: 6px;
+}
+.reg-input {
+  width: 100%;
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 15px;
+  font-family: var(--font-b);
+  color: var(--text);
+  outline: none;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+}
+.reg-input:focus { border-color: var(--navy); }
+.reg-society-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.reg-soc {
+  background: white;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.reg-soc:active { transform: scale(0.97); }
+.reg-soc.selected {
+  border-color: var(--navy);
+  background: var(--lavender);
+}
+.reg-soc-icon { font-size: 24px; margin-bottom: 4px; }
+.reg-soc-name {
+  font-family: var(--font-h);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--navy);
+}
+.reg-soc-type {
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.reg-btn {
+  width: 100%;
+  background: var(--navy);
+  color: white;
+  font-family: var(--font-h);
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  border-radius: var(--r-pill);
+  padding: 14px;
+  cursor: pointer;
+  transition: opacity 0.18s;
+}
+.reg-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.reg-btn:not(:disabled):active { opacity: 0.8; }
+.reg-error {
+  color: var(--red);
+  font-size: 12px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* ==== 結社選択モーダル ==== */
+.reg-modal-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reg-modal {
+  background: white;
+  border-radius: var(--r);
+  padding: 30px 20px;
+  width: 90%;
+  max-width: 360px;
+  max-height: 85vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+.reg-modal::-webkit-scrollbar { display: none; }
+
+/* ==== ログイン/新規登録画面 ==== */
+.auth-modal-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--navy);
+  z-index: 210;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth-modal {
+  text-align: center;
+  width: 85%;
+  max-width: 340px;
+}
+.auth-logo { font-size: 56px; margin-bottom: 8px; }
+.auth-title {
+  font-family: var(--font-h);
+  font-size: 22px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+}
+.auth-subtitle {
+  font-family: var(--font-h);
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 28px;
+}
+.auth-form { width: 100%; }
+.auth-input {
+  display: block;
+  width: 100%;
+  padding: 13px 16px;
+  border: none;
+  border-radius: var(--r-pill);
+  font-size: 14px;
+  font-family: var(--font-b);
+  color: var(--text);
+  background: rgba(255,255,255,0.9);
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  outline: none;
+}
+.auth-input:focus { background: white; box-shadow: 0 0 0 2px var(--red); }
+.auth-input::placeholder { color: #999; }
+.auth-divider {
+  text-align: center;
+  margin: 14px 0;
+  position: relative;
+}
+.auth-divider::before, .auth-divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 35%;
+  height: 1px;
+  background: rgba(255,255,255,0.2);
+}
+.auth-divider::before { left: 0; }
+.auth-divider::after { right: 0; }
+.auth-divider span {
+  font-size: 11px;
+  color: rgba(255,255,255,0.4);
+  font-family: var(--font-h);
+}
+.auth-back-link {
+  text-align: center;
+  font-size: 12px;
+  color: var(--navy);
+  cursor: pointer;
+  margin-top: 14px;
+  font-family: var(--font-h);
+  font-weight: 700;
+}
+.auth-back-link:hover { text-decoration: underline; }
+.auth-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border-radius: var(--r-pill);
+  font-family: var(--font-h);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 12px;
+  transition: opacity 0.2s;
+}
+.auth-btn:active { opacity: 0.8; }
+.auth-btn-login {
+  background: white;
+  color: var(--navy);
+}
+.auth-btn-register {
+  background: var(--red);
+  color: white;
+}
+.auth-note {
+  font-size: 10px;
+  color: rgba(255,255,255,0.4);
+  margin-top: 20px;
+}
+
+/* ==== プレースホルダー画面 ==== */
+.screen-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
+}
+.ph-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.6;
+}
+.ph-title {
+  font-family: var(--font-h);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.ph-desc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ====================================
+   エージェントルーム（B案）
+   ==================================== */
+.room-wrapper { position: relative; width: 100%; height: 100vh; }
+.app-body:has(.room-wrapper) { padding: 0; height: 100%; }
+.room-bg { position: absolute; inset: 0; z-index: 0; }
+.room-bg img { width: 100%; height: 100%; object-fit: cover; }
+.room-vignette {
+  position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, transparent 18%, transparent 75%, rgba(0,0,0,0.3) 100%),
+              radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.35) 100%);
+}
+.room-agent-bar {
+  position: absolute; top: 0; left: 0; right: 0; z-index: 10;
+  padding: 10px 16px; display: flex; align-items: center; gap: 10px;
+  background: linear-gradient(180deg, rgba(27,43,114,0.85) 0%, rgba(27,43,114,0) 100%);
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+}
+.room-agent-icon {
+  width: 40px; height: 40px; border-radius: 50%; flex-shrink: 0;
+  border: 2px solid rgba(255,255,255,0.7); cursor: pointer;
+  object-fit: cover; transition: transform 0.2s;
+}
+.room-agent-icon:hover { transform: scale(1.1); }
+.room-agent-info { flex: 1; }
+.room-agent-name { font-size: 14px; font-weight: 700; color: #fff; text-shadow: 0 1px 4px rgba(0,0,0,0.5); }
+.room-agent-sub { font-size: 11px; color: rgba(255,255,255,0.7); margin-top: 1px; }
+
+/* キャラクター（全体シルエット — 背景ごとに位置変更） */
+.room-character {
+  position: absolute; z-index: 3;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
+  pointer-events: none; transition: all 0.4s ease;
+}
+.room-character.pos-western { left: 23%; bottom: 48%; width: 23%; }
+.room-character.pos-japanese { left: 18%; bottom: 44%; width: 35%; }
+.room-character img { width: 100%; height: auto; display: block; }
+
+/* ホットスポット */
+.hotspot {
+  position: absolute; z-index: 6; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%; transition: transform 0.3s;
+}
+.hs-inner {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: rgba(27,43,114,0.55); border: 2px solid rgba(255,255,255,0.4);
+  backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; position: relative; transition: all 0.3s;
+}
+.hs-inner::before {
+  content: ''; position: absolute; inset: -6px; border-radius: 50%;
+  border: 2px solid rgba(232,0,61,0.4);
+  animation: hs-pulse 2.5s ease-in-out infinite;
+}
+.hotspot:hover .hs-inner {
+  background: rgba(232,0,61,0.6); border-color: rgba(255,255,255,0.7);
+  transform: scale(1.1); box-shadow: 0 0 20px rgba(232,0,61,0.5);
+}
+.hotspot:hover .hs-inner::before { animation: hs-pulse-active 1.2s ease-in-out infinite; border-color: rgba(232,0,61,0.7); }
+.hs-label {
+  position: absolute; bottom: -22px; left: 50%; transform: translateX(-50%);
+  font-size: 10px; font-weight: 700; color: #fff; white-space: nowrap;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.8); opacity: 0; transition: opacity 0.3s;
+}
+.hotspot:hover .hs-label { opacity: 1; }
+
+@keyframes hs-pulse { 0%,100%{transform:scale(1);opacity:0.6;} 50%{transform:scale(1.35);opacity:0;} }
+@keyframes hs-pulse-active { 0%,100%{transform:scale(1);opacity:1;} 50%{transform:scale(1.5);opacity:0;} }
+
+/* ホットスポット位置 */
+.hs-map { top: 18%; left: 18%; }
+.hs-cork { top: 15%; right: 16%; }
+.hs-monitor { top: 45%; right: 14%; }
+.hs-safe { bottom: 18%; right: 18%; }
+
+/* パネル背景 */
+.room-backdrop {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 50;
+  opacity: 0; visibility: hidden; transition: opacity 0.35s, visibility 0.35s;
+}
+.room-backdrop.active { opacity: 1; visibility: visible; }
+
+/* スライドアップパネル */
+.room-panel {
+  position: fixed; bottom: 76px; left: 50%; transform: translateX(-50%) translateY(100%);
+  width: var(--app-w, 390px); max-width: 100vw; max-height: calc(100vh - 76px - 60px); z-index: 100;
+  background: #1a1a2e; border-radius: 20px 20px 0 0;
+  transition: transform 0.4s cubic-bezier(0.32,0.72,0,1); overflow: hidden;
+}
+.room-panel.active { transform: translateX(-50%) translateY(0); }
+.rp-handle { width: 40px; height: 4px; background: rgba(255,255,255,0.25); border-radius: 2px; margin: 12px auto 0; }
+.rp-header { padding: 16px 20px 8px; font-size: 16px; font-weight: 800; color: #fff; }
+.rp-body { padding: 0 20px 24px; color: rgba(255,255,255,0.7); font-size: 13px; line-height: 1.8; overflow-y: auto; max-height: calc(100vh - 76px - 60px - 80px); }
+
+/* バッジ */
+.rp-badge-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; margin-top: 8px; }
+.rp-badge { background: #232342; border-radius: 10px; padding: 10px 8px; text-align: center; font-size: 24px; line-height: 1.5; }
+.rp-badge small { font-size: 11px; display: block; }
+.rp-badge.locked { opacity: 0.4; }
+
+/* 統計 */
+.rp-stat { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 12px; }
+.rp-stat strong { color: #fff; }
+.rp-bar { width: 100%; height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; margin: 4px 0 8px; overflow: hidden; }
+.rp-bar-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--red), #ff4d6d); }
+
+/* 活動 */
+.rp-activity { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 12px; }
+.rp-activity b { color: #FFD700; }
+.rp-activity span { float: right; font-size: 10px; color: rgba(255,255,255,0.4); }
+
+/* ポイント */
+.rp-points-big { font-size: 36px; font-weight: 800; color: #fff; text-align: center; margin: 16px 0 4px; }
+.rp-points-big small { font-size: 16px; font-weight: 500; color: rgba(255,255,255,0.5); }
+.rp-points-btns { display: flex; gap: 8px; }
+.rp-points-btns button { flex: 1; padding: 10px 8px; border: none; border-radius: 10px; background: #232342; color: #fff; font-family: inherit; font-size: 11px; font-weight: 700; cursor: pointer; }
+
+/* プロフィール編集 */
+.rp-label { font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.5); display: block; margin: 12px 0 8px; }
+.rp-avatar-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 6px; max-height: 180px; overflow-y: auto; }
+.rp-avatar-thumb { width: 100%; aspect-ratio: 1; border-radius: 50%; background: #232342; border: 2px solid transparent; cursor: pointer; overflow: hidden; transition: border-color 0.2s; }
+.rp-avatar-thumb.selected { border-color: var(--red); }
+.rp-avatar-thumb img { width: 100%; height: 100%; object-fit: cover; }
+
+.rp-char-select { display: flex; gap: 8px; margin-bottom: 8px; }
+.rp-char-thumb { width: 60px; text-align: center; cursor: pointer; border: 2px solid transparent; border-radius: 10px; padding: 4px; background: #232342; transition: border-color 0.2s; }
+.rp-char-thumb.selected { border-color: var(--red); }
+.rp-char-thumb img { width: 100%; height: auto; }
+.rp-char-thumb small { font-size: 10px; color: rgba(255,255,255,0.6); display: block; margin-top: 2px; }
+
+.rp-bg-select { display: flex; gap: 8px; }
+.rp-bg-thumb { width: 80px; height: 60px; border-radius: 10px; overflow: hidden; border: 2px solid transparent; cursor: pointer; transition: border-color 0.2s; }
+.rp-bg-thumb.selected { border-color: var(--red); }
+.rp-bg-thumb img { width: 100%; height: 100%; object-fit: cover; }
+
+.rp-comment { width: 100%; padding: 10px 12px; border: 1px solid rgba(255,255,255,0.15); border-radius: 10px; background: #232342; color: #fff; font-family: inherit; font-size: 13px; resize: none; outline: none; }
+.rp-comment:focus { border-color: var(--red); }
+
+/* ==== ミッションルーム（全画面背景型） ==== */
+.mission-room {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+.mission-room-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0; left: 0;
+}
+.mission-avatar {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+}
+.mission-avatar img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  bottom: 0; left: 0;
+}
+.mission-avatar .avatar-open { opacity: 1; position: relative; }
+.mission-avatar .avatar-closed { opacity: 0; }
+
+.mission-bg-toggle {
+  position: absolute;
+  top: 10px; right: 10px;
+  z-index: 20;
+  background: rgba(27,43,114,0.7);
+  backdrop-filter: blur(6px);
+  border: none; border-radius: 50%;
+  width: 36px; height: 36px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* オブジェクトタップ領域 */
+.mission-obj {
+  position: absolute;
+  z-index: 15;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+.mission-obj:hover,
+.mission-obj:active {
+  background: rgba(255,255,255,0.15);
+}
+.mission-obj.has-mission {
+  /* 枠の点滅なし — Missionタグのみ点滅 */
+}
+.mission-obj-label {
+  position: absolute;
+  bottom: -20px; left: 50%;
+  transform: translateX(-50%);
+  background: rgba(27,43,114,0.85);
+  color: white;
+  font-size: 10px;
+  font-family: var(--font-h);
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* Missionタグ（点滅） */
+.mission-obj-tag {
+  position: absolute;
+  top: -8px; left: 50%;
+  transform: translateX(-50%);
+  background: var(--red);
+  color: white;
+  font-size: 9px;
+  font-family: var(--font-h);
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+  pointer-events: none;
+  letter-spacing: 0.05em;
+  animation: missionBlink 2.5s ease-in-out infinite;
+  box-shadow: 0 2px 8px rgba(232,0,61,0.4);
+}
+@keyframes missionBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+/* 達成済み */
+.mission-obj-tag.completed {
+  background: #059669;
+  animation: none;
+  box-shadow: 0 2px 8px rgba(5,150,105,0.4);
+}
+/* studyタグ位置オフセット */
+.mission-obj-study .mission-obj-tag {
+  top: 9px;
+  left: 73%;
+}
+
+/* ロゴアイコン（Missionタグの上） */
+.mission-obj-icon {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: auto;
+  pointer-events: none;
+  animation: missionBlink 2.5s ease-in-out infinite;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+}
+/* studyのアイコン位置調整 */
+.mission-obj-study .mission-obj-icon {
+  top: -18px;
+  left: 73%;
+}
+
+/* ポイント吸収アニメーション */
+.pt-fly {
+  position: absolute;
+  z-index: 50;
+  font-family: var(--font-h);
+  font-size: 16px;
+  font-weight: 800;
+  color: #34D399;
+  pointer-events: none;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  animation: ptFlyUp 1.2s ease-out forwards;
+}
+@keyframes ptFlyUp {
+  0% { opacity: 1; transform: translate(0, 0) scale(1); }
+  60% { opacity: 1; transform: translate(-50px, -120px) scale(1.3); }
+  100% { opacity: 0; transform: translate(-80px, -160px) scale(0.5); }
+}
+/* ポイント表示の数値変化演出 */
+.mission-pt-num.pulse {
+  animation: ptPulse 0.4s ease;
+}
+@keyframes ptPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); color: #34D399; }
+  100% { transform: scale(1); }
+}
+
+/* ポイント表示（ルーム左上） */
+.mission-pt-display {
+  position: absolute;
+  top: 10px; left: 10px;
+  z-index: 20;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  background: rgba(27,43,114,0.8);
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  padding: 6px 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.mission-pt-num {
+  font-family: var(--font-h);
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+.mission-pt-label {
+  font-size: 11px;
+  color: rgba(255,255,255,0.7);
+  font-family: var(--font-h);
+  font-weight: 700;
+}
+.mission-pt-today {
+  font-size: 10px;
+  color: #34D399;
+  font-family: var(--font-h);
+  font-weight: 800;
+  margin-left: 4px;
+}
+
+/* ミニステータス帯 */
+.mission-stats {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  z-index: 16;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding: 10px 16px;
+  background: linear-gradient(transparent, rgba(27,43,114,0.85));
+  font-size: 11px;
+  color: rgba(255,255,255,0.9);
+  font-family: var(--font-h);
+  font-weight: 700;
+}
+
+/* パネルオーバーレイ */
+.mission-panel-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+}
+.mission-panel {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  width: 88%;
+  max-width: 360px;
+  max-height: 75vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  scrollbar-width: none;
+}
+.mission-panel::-webkit-scrollbar { display: none; }
+.mp-close {
+  position: absolute;
+  top: 10px; right: 14px;
+  background: none; border: none;
+  font-size: 20px; cursor: pointer;
+  color: var(--muted);
+}

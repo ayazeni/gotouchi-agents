@@ -1,0 +1,69 @@
+{
+  "society_key": "nikko",
+  "name": "日光ひみつ結社",
+  "region_code": "092011",
+  "prefecture": "栃木県",
+  "municipality": "日光市",
+  "template": "mountain",
+  "theme_color": "#2E4053",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "世界遺産の山岳霊場に潜む秘密組織。",
+  "local_cuisine": [
+    "湯葉料理",
+    "ゆばそば",
+    "日光甚五郎煎餅",
+    "羊かん"
+  ],
+  "landmarks": [
+    "日光東照宮",
+    "中禅寺湖",
+    "華厳の滝",
+    "戦場ヶ原",
+    "二荒山神社"
+  ],
+  "annual_events": [
+    {
+      "name": "日光東照宮春季例大祭",
+      "month": 5
+    },
+    {
+      "name": "日光紅葉まつり",
+      "month": 10
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜だべ",
+    "〜だんべ"
+  ],
+  "mountain_trails": [
+    "男体山",
+    "日光白根山",
+    "戦場ヶ原ハイキング"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "徳川家康", "field": "武将・将軍", "era": "江戸初期", "episode": "日光東照宮に神として祀られた江戸幕府の開祖。「東照大権現」として日光を最大の聖地に押し上げた" },
+    { "name": "天海", "field": "僧侶", "era": "江戸初期", "episode": "日光山を徳川家の霊廟として整備した高僧。家康の側近として東照宮建立を主導し日光の宗教的権威を確立した" },
+    { "name": "左甚五郎", "field": "彫刻職人", "era": "江戸", "episode": "日光東照宮の「眠り猫」を彫ったとされる伝説の名工。日本中に彫刻の傑作を残したとされる謎多き天才彫刻師" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

@@ -1,0 +1,70 @@
+{
+  "society_key": "takayama",
+  "name": "高山ひみつ結社",
+  "region_code": "212016",
+  "prefecture": "岐阜県",
+  "municipality": "高山市",
+  "template": "mountain",
+  "theme_color": "#3D1C02",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "飛騨の古い街並みに潜む秘密組織。",
+  "local_cuisine": [
+    "飛騨牛",
+    "高山ラーメン",
+    "みたらし団子",
+    "朴葉味噌"
+  ],
+  "landmarks": [
+    "古い町並み（さんまち通）",
+    "飛騨国分寺",
+    "高山陣屋",
+    "飛騨の里"
+  ],
+  "annual_events": [
+    {
+      "name": "高山祭（春）",
+      "month": 4
+    },
+    {
+      "name": "高山祭（秋）",
+      "month": 10
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜やよ",
+    "〜げ",
+    "ごつい"
+  ],
+  "mountain_trails": [
+    "乗鞍岳",
+    "北アルプス",
+    "上高地",
+    "新穂高ロープウェイ"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "金森長近", "field": "武将・大名", "era": "戦国-江戸", "episode": "飛騨高山藩の初代藩主。高山城を築城し城下町高山の街並みを整備した。現在の「古い町並み」の原型を作った" },
+    { "name": "飛騨の匠", "field": "建築職人", "era": "奈良-平安", "episode": "飛騨から都へ徴用された日本最高の大工集団。法隆寺や東大寺など数多くの国宝建築を手掛けた飛騨の誇り" },
+    { "name": "田中大秀", "field": "国学者", "era": "江戸後期", "episode": "飛騨出身の国学者。本居宣長の高弟として「竹取翁物語」の注釈など古典研究に尽力した飛騨の文人" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

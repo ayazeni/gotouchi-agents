@@ -1,0 +1,71 @@
+{
+  "society_key": "kobe",
+  "name": "神戸ひみつ結社",
+  "region_code": "281000",
+  "prefecture": "兵庫県",
+  "municipality": "神戸市",
+  "template": "coastal",
+  "theme_color": "#1A3A5C",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "異国情緒漂う港町の秘密組織。",
+  "local_cuisine": [
+    "神戸ビーフ",
+    "明石焼き",
+    "神戸プリン",
+    "ケーキ"
+  ],
+  "landmarks": [
+    "異人館街",
+    "神戸港",
+    "北野天満神社",
+    "六甲山",
+    "有馬温泉"
+  ],
+  "annual_events": [
+    {
+      "name": "神戸まつり",
+      "month": 5
+    },
+    {
+      "name": "ルミナリエ",
+      "month": 12
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜やで",
+    "〜やん",
+    "神戸弁"
+  ],
+  "fish_species": [
+    "明石ダコ",
+    "鯛",
+    "ハモ",
+    "イカナゴ"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "坂本龍馬", "field": "武士・活動家", "era": "幕末", "episode": "神戸海軍操練所で学んだ幕末の志士。海援隊を組織し薩長同盟を成立させ明治維新の礎を作った" },
+    { "name": "川崎正蔵", "field": "実業家", "era": "明治", "episode": "神戸に川崎造船所（現・川崎重工）を創業した実業家。日本の造船・重工業の発展に大きく貢献した" },
+    { "name": "清少納言", "field": "文学者", "era": "平安", "episode": "神戸・須磨に縁ある平安の才女。「枕草子」に須磨の景色を記し、源氏物語の舞台ともなった地域と深く関わった" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

@@ -1,0 +1,72 @@
+{
+  "society_key": "wakayama",
+  "name": "和歌山ひみつ結社",
+  "region_code": "301005",
+  "prefecture": "和歌山県",
+  "municipality": "和歌山市",
+  "template": "coastal",
+  "theme_color": "#2ECC71",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "熊野の聖地に潜む秘密組織。",
+  "local_cuisine": [
+    "和歌山ラーメン",
+    "めはり寿司",
+    "熊野古道グルメ",
+    "みかん料理",
+    "クエ鍋"
+  ],
+  "landmarks": [
+    "熊野古道",
+    "高野山",
+    "白浜温泉",
+    "串本の珊瑚礁",
+    "那智の滝"
+  ],
+  "annual_events": [
+    {
+      "name": "紀州よさこい祭り",
+      "month": 8
+    },
+    {
+      "name": "和歌山城リレーマラソン",
+      "month": 10
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜やで",
+    "〜けん",
+    "紀州弁"
+  ],
+  "fish_species": [
+    "マグロ",
+    "カツオ",
+    "クエ",
+    "イセエビ"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "弘法大師（空海）", "field": "僧侶・思想家", "era": "平安", "episode": "高野山に真言宗の聖地・金剛峯寺を開創した宗教家。和歌山・高野山は彼が入定したとされる霊場として世界遺産に登録されている" },
+    { "name": "徳川吉宗", "field": "将軍", "era": "江戸", "episode": "紀州藩主から江戸幕府8代将軍となった名君。享保の改革で幕府財政を立て直し「暴れん坊将軍」のモデルとなった" },
+    { "name": "南方熊楠", "field": "博物学者・民俗学者", "era": "明治-昭和", "episode": "和歌山・田辺出身の世界的博物学者。粘菌研究の第一人者であり神社合祀反対運動でも活躍した奇才の博物家" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

@@ -1,0 +1,76 @@
+{
+  "society_key": "kyoto",
+  "name": "京都ひみつ結社",
+  "region_code": "261009",
+  "prefecture": "京都府",
+  "municipality": "京都市",
+  "template": "castle_town",
+  "theme_color": "#6C2D2D",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "千年の都に潜む秘密組織。",
+  "local_cuisine": [
+    "湯豆腐",
+    "おばんざい",
+    "京懐石",
+    "抹茶スイーツ",
+    "にしんそば"
+  ],
+  "landmarks": [
+    "金閣寺",
+    "銀閣寺",
+    "伏見稲荷大社",
+    "嵐山",
+    "清水寺",
+    "祇園"
+  ],
+  "annual_events": [
+    {
+      "name": "祇園祭",
+      "month": 7
+    },
+    {
+      "name": "葵祭",
+      "month": 5
+    },
+    {
+      "name": "時代祭",
+      "month": 10
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜どす",
+    "おおきに",
+    "いけず"
+  ],
+  "historical_figures": [
+    "豊臣秀吉",
+    "織田信長",
+    "坂本龍馬"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "紫式部", "field": "文学者", "era": "平安", "episode": "京都出身の宮廷女官。世界最古の長編小説「源氏物語」を著し日本文学の最高峰と称される才媛" },
+    { "name": "千利休", "field": "茶人", "era": "戦国-安土桃山", "episode": "京都で茶道の美意識「侘び茶」を完成させた茶聖。織田信長・豊臣秀吉に仕えたが最後は秀吉の命で切腹した" },
+    { "name": "本居宣長", "field": "国学者", "era": "江戸後期", "episode": "京都・伊勢に縁深い国学の大成者。「古事記伝」を著し日本古来の精神文化を体系的に研究した" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

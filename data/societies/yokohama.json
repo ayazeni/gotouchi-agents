@@ -1,0 +1,70 @@
+{
+  "society_key": "yokohama",
+  "name": "横浜ひみつ結社",
+  "region_code": "141003",
+  "prefecture": "神奈川県",
+  "municipality": "横浜市",
+  "template": "coastal",
+  "theme_color": "#1A5276",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "港町横浜の国際的な秘密組織。",
+  "local_cuisine": [
+    "横浜中華街",
+    "シウマイ",
+    "家系ラーメン",
+    "ハマのビール"
+  ],
+  "landmarks": [
+    "横浜中華街",
+    "みなとみらい",
+    "山下公園",
+    "赤レンガ倉庫",
+    "横浜スタジアム"
+  ],
+  "annual_events": [
+    {
+      "name": "横浜開港祭",
+      "month": 6
+    },
+    {
+      "name": "横浜中華街春節",
+      "month": 2
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜じゃん",
+    "〜だべ"
+  ],
+  "fish_species": [
+    "マグロ",
+    "シラス",
+    "アジ",
+    "サバ"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "ジョン万次郎（中浜万次郎）", "field": "漂流民・通訳", "era": "幕末", "episode": "漂流後にアメリカで教育を受け帰国した最初の日本人。横浜開港に際し幕府の通訳として活躍し日米交流の橋渡しをした" },
+    { "name": "ハリス（タウンゼント・ハリス）", "field": "外交官", "era": "幕末", "episode": "横浜に開設された米国総領事館の初代総領事。日米修好通商条約を締結し横浜開港を実現させた開港の立役者" },
+    { "name": "島崎藤村", "field": "小説家・詩人", "era": "明治-昭和", "episode": "横浜を舞台に創作活動を行った近代文学の巨人。「夜明け前」「破戒」など日本近代文学を代表する作品を残した" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

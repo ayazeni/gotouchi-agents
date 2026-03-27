@@ -1,0 +1,70 @@
+{
+  "society_key": "hiroshima",
+  "name": "広島ひみつ結社",
+  "region_code": "340009",
+  "prefecture": "広島県",
+  "municipality": "広島市",
+  "template": "coastal",
+  "theme_color": "#922B21",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "平和の都に潜む秘密組織。",
+  "local_cuisine": [
+    "広島風お好み焼き",
+    "牡蠣料理",
+    "穴子めし",
+    "広島レモン"
+  ],
+  "landmarks": [
+    "原爆ドーム",
+    "厳島神社",
+    "縮景園",
+    "広島城"
+  ],
+  "annual_events": [
+    {
+      "name": "広島フラワーフェスティバル",
+      "month": 5
+    },
+    {
+      "name": "宮島水中花火大会",
+      "month": 8
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜じゃけん",
+    "〜じゃろ",
+    "わや"
+  ],
+  "fish_species": [
+    "牡蠣",
+    "アナゴ",
+    "サワラ",
+    "コウイカ"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "浅野長政", "field": "武将・大名", "era": "安土桃山-江戸", "episode": "広島藩の礎を築いた初代藩主。毛利氏の後に広島城を拠点として広島の発展に貢献した" },
+    { "name": "毛利元就", "field": "武将・大名", "era": "戦国", "episode": "「三矢の教え」で知られる中国地方の覇者。広島を拠点に中国地方10ヶ国を統一した戦国の知将" },
+    { "name": "佐々木禎子", "field": "平和の象徴", "era": "昭和", "episode": "原爆により白血病を発症した少女。千羽鶴を折り続けながら病と闘い、今も世界的な平和の象徴として語り継がれる" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

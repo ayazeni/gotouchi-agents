@@ -1,0 +1,71 @@
+{
+  "society_key": "nara",
+  "name": "奈良ひみつ結社",
+  "region_code": "292010",
+  "prefecture": "奈良県",
+  "municipality": "奈良市",
+  "template": "castle_town",
+  "theme_color": "#7D6608",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "古都奈良の鹿と共に潜む秘密組織。",
+  "local_cuisine": [
+    "柿の葉寿司",
+    "三輪そうめん",
+    "奈良漬",
+    "葛料理",
+    "大和の野菜"
+  ],
+  "landmarks": [
+    "東大寺",
+    "春日大社",
+    "興福寺",
+    "奈良公園",
+    "法隆寺"
+  ],
+  "annual_events": [
+    {
+      "name": "若草山焼き",
+      "month": 1
+    },
+    {
+      "name": "東大寺お水取り",
+      "month": 3
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜やで",
+    "〜やんか",
+    "おおきに"
+  ],
+  "historical_figures": [
+    "聖武天皇",
+    "行基",
+    "鑑真"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "聖武天皇", "field": "天皇", "era": "奈良", "episode": "東大寺大仏を建立した奈良時代の天皇。仏教を国家の柱とし「万民のために」との願いを込め奈良の大仏造立を命じた" },
+    { "name": "行基", "field": "僧侶", "era": "奈良", "episode": "奈良大仏建立を民衆と共に成し遂げた高僧。布施屋・橋・池など社会基盤整備に尽力し民衆から「行基菩薩」と慕われた" },
+    { "name": "鑑真", "field": "僧侶", "era": "奈良", "episode": "唐から6度目の航海で日本に渡った高僧。奈良・唐招提寺を創建し正式な戒律を日本に伝えた仏教史上の偉人" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

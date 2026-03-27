@@ -1,0 +1,67 @@
+{
+  "society_key": "matsuyama",
+  "name": "松山ひみつ結社",
+  "region_code": "382019",
+  "prefecture": "愛媛県",
+  "municipality": "松山市",
+  "template": "onsen",
+  "theme_color": "#784212",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "道後温泉の湯けむりに潜む秘密組織。",
+  "local_cuisine": [
+    "鯛めし",
+    "じゃこ天",
+    "蛇口からみかんジュース",
+    "坊っちゃん団子"
+  ],
+  "landmarks": [
+    "道後温泉",
+    "松山城",
+    "子規記念博物館",
+    "石手寺"
+  ],
+  "annual_events": [
+    {
+      "name": "松山まつり",
+      "month": 8
+    },
+    {
+      "name": "道後温泉まつり",
+      "month": 5
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜じゃけん",
+    "〜ぞな",
+    "いかんぞな"
+  ],
+  "onsen_types": [
+    "アルカリ性単純温泉"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "正岡子規", "field": "俳人・歌人", "era": "明治", "episode": "松山出身の近代俳句・短歌の革新者。「柿食えば鐘が鳴るなり法隆寺」の作者。病と闘いながら文学改革を成し遂げた" },
+    { "name": "夏目漱石", "field": "小説家", "era": "明治", "episode": "松山中学の英語教師として赴任し道後温泉に通った文豪。「坊っちゃん」の舞台として松山を全国に知らしめた" },
+    { "name": "加藤嘉明", "field": "武将・大名", "era": "戦国-江戸", "episode": "松山城を築城した伊予松山藩の初代藩主。賤ヶ岳七本槍の一人として豊臣秀吉に仕えた武将" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

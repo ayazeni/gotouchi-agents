@@ -1,0 +1,68 @@
+{
+  "society_key": "kawagoe",
+  "name": "川越ひみつ結社",
+  "region_code": "112062",
+  "prefecture": "埼玉県",
+  "municipality": "川越市",
+  "template": "suburban",
+  "theme_color": "#7B3F00",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "小江戸の蔵造りに潜む秘密組織。",
+  "local_cuisine": [
+    "さつまいも料理",
+    "川越芋",
+    "時の鐘そば",
+    "川越まつり屋台"
+  ],
+  "landmarks": [
+    "時の鐘",
+    "蔵造りの街並み",
+    "川越城本丸御殿",
+    "喜多院"
+  ],
+  "annual_events": [
+    {
+      "name": "川越まつり",
+      "month": 10
+    },
+    {
+      "name": "川越百万灯夏まつり",
+      "month": 7
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜だべ",
+    "なんでい"
+  ],
+  "commercial_areas": [
+    "蔵造りの街並み",
+    "菓子屋横丁",
+    "クレアモール"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "太田道灌", "field": "武将", "era": "室町-戦国", "episode": "川越城を築城した武将。江戸城も築いた関東の名将で、和歌の才にも優れた文武両道の人物として知られる" },
+    { "name": "天海", "field": "僧侶", "era": "江戸初期", "episode": "川越喜多院を拠点とした徳川家康・秀忠・家光の3代に仕えた高僧。「黒衣の宰相」とも呼ばれた江戸幕府の精神的支柱" },
+    { "name": "松平信綱", "field": "政治家・大名", "era": "江戸", "episode": "「知恵伊豆」の異名を持つ川越藩主。島原の乱を鎮圧し川越の街並み整備に尽力した江戸初期の名政治家" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

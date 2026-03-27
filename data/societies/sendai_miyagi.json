@@ -1,0 +1,69 @@
+{
+  "society_key": "sendai_miyagi",
+  "name": "仙台宮城ひみつ結社",
+  "region_code": "040009",
+  "prefecture": "宮城県",
+  "municipality": "気仙沼市",
+  "template": "coastal",
+  "theme_color": "#1ABC9C",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "三陸の海に潜む秘密組織。",
+  "local_cuisine": [
+    "フカヒレ料理",
+    "気仙沼ラーメン",
+    "メカジキ料理",
+    "さんまの刺身"
+  ],
+  "landmarks": [
+    "気仙沼大島",
+    "唐桑半島",
+    "気仙沼港",
+    "大谷海岸"
+  ],
+  "annual_events": [
+    {
+      "name": "気仙沼みなとまつり",
+      "month": 8
+    },
+    {
+      "name": "唐桑ウニまつり",
+      "month": 7
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜だっちゃ",
+    "〜だいや"
+  ],
+  "fish_species": [
+    "サメ（フカヒレ）",
+    "カツオ",
+    "サンマ",
+    "メカジキ"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "畠山重忠", "field": "武将", "era": "鎌倉", "episode": "三陸・宮城ゆかりの鎌倉幕府の御家人。源頼朝に仕えた誠実な武将で「坂東武者の鑑」と称される" },
+    { "name": "伊達政宗", "field": "武将・大名", "era": "戦国-江戸", "episode": "気仙沼を含む宮城全域を統治した仙台藩主。三陸の海産物を重視し漁業振興を行った東北の英雄" },
+    { "name": "村上水軍の末裔", "field": "漁業者・地域指導者", "era": "江戸-明治", "episode": "気仙沼沿岸の漁業を代々受け継いだ漁師一族。三陸沖の過酷な漁場で培った技術と知恵は今も地域に受け継がれる" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

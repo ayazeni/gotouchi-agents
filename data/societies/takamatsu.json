@@ -1,0 +1,71 @@
+{
+  "society_key": "takamatsu",
+  "name": "高松ひみつ結社",
+  "region_code": "371004",
+  "prefecture": "香川県",
+  "municipality": "高松市",
+  "template": "coastal",
+  "theme_color": "#1A6B4A",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "うどん県の中心に潜む秘密組織。",
+  "local_cuisine": [
+    "讃岐うどん",
+    "骨付鳥",
+    "香川の醤油豆",
+    "おいり"
+  ],
+  "landmarks": [
+    "栗林公園",
+    "高松城跡",
+    "屋島",
+    "直島",
+    "玉藻公園"
+  ],
+  "annual_events": [
+    {
+      "name": "高松まつり",
+      "month": 8
+    },
+    {
+      "name": "瀬戸内国際芸術祭",
+      "month": 4
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜じゃけん",
+    "〜ぞ",
+    "讃岐弁"
+  ],
+  "fish_species": [
+    "ハマチ",
+    "タイ",
+    "タコ",
+    "ワカメ"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "空海（弘法大師）", "field": "僧侶・思想家", "era": "平安", "episode": "讃岐（現・香川県）善通寺で生まれた真言宗の開祖。四国八十八箇所霊場を開き高野山金剛峯寺を創建した日本仏教の巨人" },
+    { "name": "生駒親正", "field": "武将・大名", "era": "戦国-江戸", "episode": "高松藩の初代藩主。高松城を築城し讃岐の城下町高松の基礎を作った。水城として知られる高松城の設計者" },
+    { "name": "大平正芳", "field": "政治家", "era": "昭和", "episode": "香川・和田浜出身の元内閣総理大臣。日中平和友好条約を締結し「讃岐のコシヒカリ」の愛称で親しまれた" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

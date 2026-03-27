@@ -1,0 +1,68 @@
+{
+  "society_key": "himeji",
+  "name": "姫路ひみつ結社",
+  "region_code": "282014",
+  "prefecture": "兵庫県",
+  "municipality": "姫路市",
+  "template": "castle_town",
+  "theme_color": "#F0F0E8",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "白鷺城の陰に潜む秘密組織。",
+  "local_cuisine": [
+    "姫路おでん",
+    "アーモンドトースト",
+    "えきそば",
+    "穴子料理"
+  ],
+  "landmarks": [
+    "姫路城（白鷺城）",
+    "好古園",
+    "書写山圓教寺",
+    "男山配水池公園"
+  ],
+  "annual_events": [
+    {
+      "name": "姫路城マラソン",
+      "month": 2
+    },
+    {
+      "name": "姫路ゆかたまつり",
+      "month": 6
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜やで",
+    "〜やん",
+    "播州弁"
+  ],
+  "historical_figures": [
+    "宮本武蔵",
+    "黒田官兵衛"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "黒田官兵衛", "field": "武将・軍師", "era": "戦国", "episode": "姫路を本拠地とした豊臣秀吉の参謀。卓越した戦略眼で天下統一に貢献し「軍師官兵衛」として語り継がれる" },
+    { "name": "宮本武蔵", "field": "剣豪", "era": "江戸初期", "episode": "播磨国（現在の姫路周辺）出身とされる剣豪。五輪書を著し生涯不敗の伝説を持つ日本最強の剣士" },
+    { "name": "本多忠政", "field": "武将・大名", "era": "江戸初期", "episode": "姫路藩初代藩主。姫路城の大改修を行い現在の美しい白鷺城の姿を完成させた" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

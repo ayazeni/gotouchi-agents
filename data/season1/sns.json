@@ -1,0 +1,106 @@
+{
+  "mission_type": "sns",
+  "season": 1,
+  "season_start": "2026/04/01",
+  "season_end": "2026/04/30",
+  "total_days": 1,
+  "days": [
+    {
+      "day": 1,
+      "date": "2026/04/01",
+      "theme": "地域の食べ物",
+      "missions": [
+        {
+          "mission_id": "sns_1_001_hakodate",
+          "points": 50,
+          "society": "hakodate",
+          "society_type": "coastal",
+          "post_text": "函館の食べ物で気になったことを投稿しよう…",
+          "hashtags": ["ひみつ結社", "函館グルメ", "いかめし"],
+          "share_url": ""
+        },
+        {
+          "mission_id": "sns_1_001_sapporo",
+          "points": 50,
+          "society": "sapporo",
+          "society_type": "suburban",
+          "post_text": "札幌の食べ物で気になったことを投稿しよう…",
+          "hashtags": ["ひみつ結社", "札幌グルメ", "味噌ラーメン"],
+          "share_url": ""
+        },
+        {
+          "mission_id": "sns_1_001_kusatsu",
+          "points": 50,
+          "society": "kusatsu",
+          "society_type": "onsen",
+          "post_text": "草津の食べ物で気になったことを投稿しよう…",
+          "hashtags": ["ひみつ結社", "草津グルメ", "温泉まんじゅう"],
+          "share_url": ""
+        },
+        {
+          "mission_id": "sns_1_001_kyoto",
+          "points": 50,
+          "society": "kyoto",
+          "society_type": "castle_town",
+          "post_text": "京都の食べ物で気になったことを投稿しよう…",
+          "hashtags": ["ひみつ結社", "京都グルメ", "湯豆腐"],
+          "share_url": ""
+        },
+        {
+          "mission_id": "sns_1_001_osaka",
+          "points": 50,
+          "society": "osaka",
+          "society_type": "suburban",
+          "post_text": "大阪の食べ物で気になったことを投稿しよう…",
+          "hashtags": ["ひみつ結社", "大阪グルメ", "たこ焼き"],
+          "share_url": ""
+        },
+        {
+          "mission_id": "sns_1_001_nagoya",
+          "points": 50,
+          "society": "nagoya",
+          "society_type": "suburban",
+          "post_text": "名古屋の食べ物で気になったことを投稿しよう…",
+          "hashtags": ["ひみつ結社", "名古屋グルメ", "味噌かつ"],
+          "share_url": ""
+        },
+        {
+          "mission_id": "sns_1_001_sendai",
+          "points": 50,
+          "society": "sendai",
+          "society_type": "suburban",
+          "post_text": "仙台の食べ物で気になったことを投稿しよう…",
+          "hashtags": ["ひみつ結社", "仙台グルメ", "牛タン"],
+          "share_url": ""
+        },
+        {
+          "mission_id": "sns_1_001_kanazawa",
+          "points": 50,
+          "society": "kanazawa",
+          "society_type": "castle_town",
+          "post_text": "金沢の食べ物で気になったことを投稿しよう…",
+          "hashtags": ["ひみつ結社", "金沢グルメ", "加賀料理"],
+          "share_url": ""
+        },
+        {
+          "mission_id": "sns_1_001_kobe",
+          "points": 50,
+          "society": "kobe",
+          "society_type": "coastal",
+          "post_text": "神戸の食べ物で気になったことを投稿しよう…",
+          "hashtags": ["ひみつ結社", "神戸グルメ", "神戸ビーフ"],
+          "share_url": ""
+        },
+        {
+          "mission_id": "sns_1_001_hiroshima",
+          "points": 50,
+          "society": "hiroshima",
+          "society_type": "coastal",
+          "post_text": "広島の食べ物で気になったことを投稿しよう…",
+          "hashtags": ["ひみつ結社", "広島グルメ", "広島風お好み焼き"],
+          "share_url": ""
+        }
+      ]
+    }
+  ]
+}

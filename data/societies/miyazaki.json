@@ -1,0 +1,71 @@
+{
+  "society_key": "miyazaki",
+  "name": "宮崎ひみつ結社",
+  "region_code": "452011",
+  "prefecture": "宮崎県",
+  "municipality": "宮崎市",
+  "template": "coastal",
+  "theme_color": "#F39C12",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "日向神話の地に潜む秘密組織。",
+  "local_cuisine": [
+    "チキン南蛮",
+    "冷汁",
+    "宮崎牛",
+    "地鶏の炭火焼",
+    "マンゴー"
+  ],
+  "landmarks": [
+    "青島神社",
+    "高千穂峡",
+    "都井岬",
+    "鵜戸神宮"
+  ],
+  "annual_events": [
+    {
+      "name": "宮崎神宮大祭",
+      "month": 10
+    },
+    {
+      "name": "みやざき国際ストリート音楽祭",
+      "month": 4
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜たい",
+    "〜ばい",
+    "〜もんで"
+  ],
+  "fish_species": [
+    "カツオ",
+    "キンメダイ",
+    "サワラ",
+    "エビ"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "小村寿太郎", "field": "外交官", "era": "明治", "episode": "宮崎・飫肥出身の外務大臣。日露戦争後のポーツマス条約締結を主導し、日米通商航海条約で関税自主権を回復させた明治の名外交官" },
+    { "name": "日野資朝", "field": "公卿・歌人", "era": "鎌倉後期", "episode": "後醍醐天皇の倒幕計画に参加した公家。日向に配流されたことで宮崎との縁を結んだ歌人・政治家" },
+    { "name": "黒田清輝", "field": "画家", "era": "明治", "episode": "鹿児島・宮崎ゆかりの日本近代洋画の父。フランスで印象派を学び帰国後に日本の西洋画壇を牽引した" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

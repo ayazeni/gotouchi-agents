@@ -1,0 +1,11 @@
+{
+  "active_season": 1,
+  "user_society": "hakodate",
+  "seasons": {
+    "1": {
+      "start": "2026/04/01",
+      "end": "2026/04/30",
+      "days": 1
+    }
+  }
+}

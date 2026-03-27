@@ -1,0 +1,72 @@
+{
+  "society_key": "kagoshima",
+  "name": "鹿児島ひみつ結社",
+  "region_code": "461009",
+  "prefecture": "鹿児島県",
+  "municipality": "鹿児島市",
+  "template": "coastal",
+  "theme_color": "#17202A",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "桜島の火とともに潜む秘密組織。",
+  "local_cuisine": [
+    "黒豚料理",
+    "薩摩揚げ",
+    "鶏刺し",
+    "芋焼酎",
+    "桜島大根"
+  ],
+  "landmarks": [
+    "桜島",
+    "仙巌園",
+    "知覧特攻平和会館",
+    "霧島神宮",
+    "屋久島"
+  ],
+  "annual_events": [
+    {
+      "name": "おはら祭",
+      "month": 11
+    },
+    {
+      "name": "桜島火の島まつり",
+      "month": 8
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜じゃ",
+    "〜もす",
+    "はんや"
+  ],
+  "fish_species": [
+    "カツオ",
+    "キビナゴ",
+    "クロマグロ",
+    "トビウオ"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "西郷隆盛", "field": "武士・政治家", "era": "幕末-明治", "episode": "薩摩藩出身の明治維新の立役者。征韓論争で下野後、西南戦争を起こし城山で最期を迎えた「最後の武士」" },
+    { "name": "大久保利通", "field": "政治家", "era": "幕末-明治", "episode": "薩摩出身の明治政府の中核を担った政治家。廃藩置県・殖産興業など近代日本の制度設計を主導した" },
+    { "name": "島津斉彬", "field": "大名・改革者", "era": "江戸後期", "episode": "薩摩藩第11代藩主。西洋技術を積極的に導入し日本最初の洋式工場群「集成館」を建設した先進的な藩主" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

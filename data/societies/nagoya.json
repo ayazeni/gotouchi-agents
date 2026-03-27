@@ -1,0 +1,71 @@
+{
+  "society_key": "nagoya",
+  "name": "名古屋ひみつ結社",
+  "region_code": "231002",
+  "prefecture": "愛知県",
+  "municipality": "名古屋市",
+  "template": "suburban",
+  "theme_color": "#7D6608",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "ものづくりの都に潜む秘密組織。",
+  "local_cuisine": [
+    "味噌かつ",
+    "ひつまぶし",
+    "小倉トースト",
+    "手羽先",
+    "あんかけスパ"
+  ],
+  "landmarks": [
+    "名古屋城",
+    "熱田神宮",
+    "大須商店街",
+    "トヨタ産業技術記念館"
+  ],
+  "annual_events": [
+    {
+      "name": "名古屋まつり",
+      "month": 10
+    },
+    {
+      "name": "名古屋城夏まつり",
+      "month": 8
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜だがや",
+    "〜だでね",
+    "えらい"
+  ],
+  "commercial_areas": [
+    "栄",
+    "名駅",
+    "大須",
+    "覚王山"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "織田信長", "field": "武将・天下人", "era": "戦国", "episode": "尾張名古屋生まれの戦国武将。「天下布武」を掲げ鉄砲を活用した長篠の戦いで武田軍を撃破し天下統一の礎を築いた" },
+    { "name": "豊臣秀吉", "field": "武将・太閤", "era": "戦国-安土桃山", "episode": "尾張中村（現・名古屋市）出身の農民から天下人へ。信長に仕えて頭角を現し日本統一を成し遂げた立志伝中の人物" },
+    { "name": "徳川家康", "field": "武将・将軍", "era": "戦国-江戸", "episode": "三河岡崎生まれだが名古屋・尾張と深く縁を持つ江戸幕府開祖。名古屋城を息子・義直のために築いた" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

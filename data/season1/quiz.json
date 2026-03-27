@@ -1,0 +1,116 @@
+{
+  "mission_type": "quiz",
+  "season": 1,
+  "season_start": "2026/04/01",
+  "season_end": "2026/04/30",
+  "total_days": 1,
+  "days": [
+    {
+      "day": 1,
+      "date": "2026/04/01",
+      "theme": "地域の食べ物",
+      "missions": [
+        {
+          "mission_id": "quiz_1_001_hakodate",
+          "points": 30,
+          "society": "hakodate",
+          "society_type": "coastal",
+          "question": "函館市を代表する海の幸「イカ」を使った名物料理は？",
+          "choices": ["やきとり弁当", "ラッキーピエロ", "いかめし", "塩ラーメン"],
+          "answer": "いかめし",
+          "explanation": "函館市ではイカを活かしたいかめしが名物です。"
+        },
+        {
+          "mission_id": "quiz_1_001_sapporo",
+          "points": 30,
+          "society": "sapporo",
+          "society_type": "suburban",
+          "question": "札幌市のご当地グルメとして有名な料理は？",
+          "choices": ["味噌ラーメン", "スープカレー", "ジンギスカン", "ザンギ"],
+          "answer": "味噌ラーメン",
+          "explanation": "札幌市といえば味噌ラーメンが地元のソウルフードです。"
+        },
+        {
+          "mission_id": "quiz_1_001_kusatsu",
+          "points": 30,
+          "society": "kusatsu",
+          "society_type": "onsen",
+          "question": "草津町の温泉地を訪れたときに食べたい名物料理は？",
+          "choices": ["温泉まんじゅう", "峠の釜めし", "水沢うどん", "こんにゃく料理"],
+          "answer": "温泉まんじゅう",
+          "explanation": "草津町では温泉とともに温泉まんじゅうが名物として親しまれています。"
+        },
+        {
+          "mission_id": "quiz_1_001_kyoto",
+          "points": 30,
+          "society": "kyoto",
+          "society_type": "castle_town",
+          "question": "京都市の城下町文化に根付いた郷土料理は？",
+          "choices": ["湯豆腐", "おばんざい", "京懐石", "抹茶スイーツ"],
+          "answer": "湯豆腐",
+          "explanation": "京都市では武家文化から生まれた湯豆腐が受け継がれています。"
+        },
+        {
+          "mission_id": "quiz_1_001_osaka",
+          "points": 30,
+          "society": "osaka",
+          "society_type": "suburban",
+          "question": "大阪市のご当地グルメとして有名な料理は？",
+          "choices": ["たこ焼き", "お好み焼き", "串カツ", "豚まん"],
+          "answer": "たこ焼き",
+          "explanation": "大阪市といえばたこ焼きが地元のソウルフードです。"
+        },
+        {
+          "mission_id": "quiz_1_001_nagoya",
+          "points": 30,
+          "society": "nagoya",
+          "society_type": "suburban",
+          "question": "名古屋市のご当地グルメとして有名な料理は？",
+          "choices": ["味噌かつ", "ひつまぶし", "小倉トースト", "手羽先"],
+          "answer": "味噌かつ",
+          "explanation": "名古屋市といえば味噌かつが地元のソウルフードです。"
+        },
+        {
+          "mission_id": "quiz_1_001_sendai",
+          "points": 30,
+          "society": "sendai",
+          "society_type": "suburban",
+          "question": "仙台市のご当地グルメとして有名な料理は？",
+          "choices": ["牛タン", "ずんだ餅", "笹かまぼこ", "仙台味噌"],
+          "answer": "牛タン",
+          "explanation": "仙台市といえば牛タンが地元のソウルフードです。"
+        },
+        {
+          "mission_id": "quiz_1_001_kanazawa",
+          "points": 30,
+          "society": "kanazawa",
+          "society_type": "castle_town",
+          "question": "金沢市の城下町文化に根付いた郷土料理は？",
+          "choices": ["加賀料理", "のどぐろ", "金沢カレー", "治部煮"],
+          "answer": "加賀料理",
+          "explanation": "金沢市では武家文化から生まれた加賀料理が受け継がれています。"
+        },
+        {
+          "mission_id": "quiz_1_001_kobe",
+          "points": 30,
+          "society": "kobe",
+          "society_type": "coastal",
+          "question": "神戸市を代表する名物料理は？",
+          "choices": ["神戸ビーフ", "明石焼き", "そばめし", "豚まん"],
+          "answer": "神戸ビーフ",
+          "explanation": "神戸市では世界的に有名な神戸ビーフが名物です。"
+        },
+        {
+          "mission_id": "quiz_1_001_hiroshima",
+          "points": 30,
+          "society": "hiroshima",
+          "society_type": "coastal",
+          "question": "広島市を代表する名物料理は？",
+          "choices": ["広島風お好み焼き", "牡蠣料理", "あなご飯", "もみじ饅頭"],
+          "answer": "広島風お好み焼き",
+          "explanation": "広島市では広島風お好み焼きが名物です。"
+        }
+      ]
+    }
+  ]
+}

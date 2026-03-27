@@ -1,0 +1,70 @@
+{
+  "society_key": "hamamatsu",
+  "name": "浜松ひみつ結社",
+  "region_code": "221309",
+  "prefecture": "静岡県",
+  "municipality": "浜松市",
+  "template": "agricultural",
+  "theme_color": "#1A5276",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "音楽と餃子の街に潜む秘密組織。",
+  "local_cuisine": [
+    "浜松餃子",
+    "うなぎ",
+    "遠州焼き",
+    "みかん"
+  ],
+  "landmarks": [
+    "浜名湖",
+    "浜松城",
+    "楽器博物館",
+    "龍潭寺"
+  ],
+  "annual_events": [
+    {
+      "name": "浜松まつり",
+      "month": 5
+    },
+    {
+      "name": "浜松国際ピアノコンクール",
+      "month": 10
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜だら",
+    "〜じゃん",
+    "やいやい"
+  ],
+  "crops": [
+    "みかん",
+    "お茶",
+    "わさび",
+    "うなぎ"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "徳川家康", "field": "武将・将軍", "era": "戦国-江戸", "episode": "浜松城を17年間の居城とした江戸幕府の開祖。三方ヶ原の戦いで武田信玄に敗れた教訓を生かし天下を統一した" },
+    { "name": "本田宗一郎", "field": "実業家・発明家", "era": "昭和", "episode": "浜松出身の世界的実業家。ホンダを創業し二輪・四輪車で世界市場を席巻した日本のものづくりの象徴" },
+    { "name": "山葉寅楠", "field": "実業家・発明家", "era": "明治", "episode": "浜松でヤマハを創業した楽器製造の先駆者。日本初のオルガン・ピアノを製作し浜松を「楽器の街」にした" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

@@ -1,0 +1,67 @@
+{
+  "society_key": "kusatsu",
+  "name": "草津ひみつ結社",
+  "region_code": "102059",
+  "prefecture": "群馬県",
+  "municipality": "吾妻郡草津町",
+  "template": "onsen",
+  "theme_color": "#6E2C00",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "日本三名泉の一つに潜む秘密組織。",
+  "local_cuisine": [
+    "温泉まんじゅう",
+    "峠の釜めし",
+    "水沢うどん",
+    "こんにゃく料理"
+  ],
+  "landmarks": [
+    "草津温泉湯畑",
+    "西の河原公園",
+    "草津熱帯圏",
+    "志賀高原"
+  ],
+  "annual_events": [
+    {
+      "name": "草津温泉スキーフェスティバル",
+      "month": 2
+    },
+    {
+      "name": "草津音楽祭",
+      "month": 8
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜だんべ",
+    "〜かい"
+  ],
+  "onsen_types": [
+    "酸性泉",
+    "硫黄泉"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "源頼朝", "field": "武将・将軍", "era": "鎌倉", "episode": "草津温泉を訪れたとされる鎌倉幕府初代将軍。草津温泉の歴史的記録の一つに頼朝の入湯が伝えられている" },
+    { "name": "ベルツ博士（エルウィン・フォン・ベルツ）", "field": "医師・医学者", "era": "明治", "episode": "草津温泉の薬効を科学的に証明したドイツ人医師。東京大学で医学を教え草津温泉の国際的評価を高めた" },
+    { "name": "徳川吉宗", "field": "将軍", "era": "江戸", "episode": "草津温泉を好んだ江戸幕府8代将軍。享保の改革を行った将軍で、草津温泉の保護・整備に貢献したとされる" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

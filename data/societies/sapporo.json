@@ -1,0 +1,69 @@
+{
+  "society_key": "sapporo",
+  "name": "札幌ひみつ結社",
+  "region_code": "011002",
+  "prefecture": "北海道",
+  "municipality": "札幌市",
+  "template": "suburban",
+  "theme_color": "#1A4A7A",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "北の大都市に潜む秘密組織。",
+  "local_cuisine": [
+    "味噌ラーメン",
+    "スープカレー",
+    "ジンギスカン",
+    "ザンギ"
+  ],
+  "landmarks": [
+    "時計台",
+    "大通公園",
+    "すすきの",
+    "羊ヶ丘展望台",
+    "藻岩山"
+  ],
+  "annual_events": [
+    {
+      "name": "さっぽろ雪まつり",
+      "month": 2
+    },
+    {
+      "name": "YOSAKOIソーラン祭り",
+      "month": 6
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "なまら",
+    "したっけ"
+  ],
+  "commercial_areas": [
+    "すすきの",
+    "札幌駅前通",
+    "狸小路商店街"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "クラーク博士（ウィリアム・スミス・クラーク）", "field": "教育者・農学者", "era": "明治", "episode": "札幌農学校（現・北海道大学）の初代教頭。「少年よ大志を抱け」の言葉を残し北海道開拓精神の象徴となった" },
+    { "name": "黒田清隆", "field": "政治家", "era": "明治", "episode": "薩摩出身だが北海道開拓使長官として札幌の都市設計を主導した政治家。後に内閣総理大臣も務めた" },
+    { "name": "有珠山の開拓者・依田勉三", "field": "開拓者", "era": "明治", "episode": "北海道・十勝の開拓に挑んだ農業開拓者。晩成社を率いて十勝の原野を切り拓いた北海道開拓の象徴的人物" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

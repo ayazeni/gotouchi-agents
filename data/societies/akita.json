@@ -1,0 +1,69 @@
+{
+  "society_key": "akita",
+  "name": "秋田ひみつ結社",
+  "region_code": "050007",
+  "prefecture": "秋田県",
+  "municipality": "秋田市",
+  "template": "agricultural",
+  "theme_color": "#8B0000",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "なまはげの里に潜む秘密組織。",
+  "local_cuisine": [
+    "きりたんぽ",
+    "いぶりがっこ",
+    "稲庭うどん",
+    "比内地鶏"
+  ],
+  "landmarks": [
+    "なまはげ館",
+    "角館武家屋敷",
+    "田沢湖",
+    "男鹿半島"
+  ],
+  "annual_events": [
+    {
+      "name": "なまはげ柴灯まつり",
+      "month": 2
+    },
+    {
+      "name": "大曲全国花火競技大会",
+      "month": 8
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜だって",
+    "まいね",
+    "したなし"
+  ],
+  "crops": [
+    "あきたこまち",
+    "大曲の花火",
+    "なまはげ"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "平田篤胤", "field": "国学者", "era": "江戸後期", "episode": "秋田出身の国学四大人の一人。復古神道を大成し、幕末の尊王攘夷思想に大きな影響を与えた" },
+    { "name": "佐竹義宣", "field": "武将・大名", "era": "江戸初期", "episode": "常陸から転封されて秋田藩を開いた初代藩主。久保田城を築き秋田の礎を作った" },
+    { "name": "石川理紀之助", "field": "農業指導者", "era": "明治", "episode": "「農聖」と呼ばれる農業改良家。秋田の荒れた農地を復興させ、農民の生活向上に生涯を捧げた" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

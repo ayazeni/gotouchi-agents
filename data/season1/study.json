@@ -1,0 +1,96 @@
+{
+  "mission_type": "study",
+  "season": 1,
+  "season_start": "2026/04/01",
+  "season_end": "2026/04/30",
+  "total_days": 1,
+  "days": [
+    {
+      "day": 1,
+      "date": "2026/04/01",
+      "theme": "地域の食べ物",
+      "missions": [
+        {
+          "mission_id": "study_1_001_hakodate",
+          "points": 40,
+          "society": "hakodate",
+          "society_type": "coastal",
+          "content": "函館市は北海道南部に位置する港町で、イカの水揚げ量が日本有数。朝市では新鮮なイカ刺しや活イカ釣りが楽しめます。いかめしは第二次世界大戦中の食糧難から生まれた駅弁で、今や全国的な人気を誇ります。",
+          "prompt": "函館の食文化について知ったことを書いてみよう"
+        },
+        {
+          "mission_id": "study_1_001_sapporo",
+          "points": 40,
+          "society": "sapporo",
+          "society_type": "suburban",
+          "content": "札幌市の味噌ラーメンは1955年頃に誕生。寒冷な気候に合う濃厚な味噌スープが特徴で、バターやコーンをトッピングするスタイルが定着しました。すすきの周辺のラーメン横丁は観光名所としても有名です。",
+          "prompt": "札幌の食文化について知ったことを書いてみよう"
+        },
+        {
+          "mission_id": "study_1_001_kusatsu",
+          "points": 40,
+          "society": "kusatsu",
+          "society_type": "onsen",
+          "content": "草津温泉は自然湧出量日本一を誇る名湯。温泉まんじゅうは温泉の蒸気で蒸し上げる製法が特徴で、草津の湯畑周辺には多くの温泉まんじゅう店が軒を連ねています。湯もみショーも有名な観光体験です。",
+          "prompt": "草津の食文化について知ったことを書いてみよう"
+        },
+        {
+          "mission_id": "study_1_001_kyoto",
+          "points": 40,
+          "society": "kyoto",
+          "society_type": "castle_town",
+          "content": "京都の湯豆腐は南禅寺周辺が発祥とされ、精進料理の流れを汲む上品な味わいが特徴。豆腐は京都の軟水と良質な大豆から作られ、昆布だしでいただくシンプルな料理に京都の美意識が凝縮されています。",
+          "prompt": "京都の食文化について知ったことを書いてみよう"
+        },
+        {
+          "mission_id": "study_1_001_osaka",
+          "points": 40,
+          "society": "osaka",
+          "society_type": "suburban",
+          "content": "大阪のたこ焼きは1935年頃に会津屋の初代が考案。外はカリッと中はトロッとした食感が特徴で、ソース・マヨネーズ・青のり・鰹節の組み合わせが定番です。道頓堀や新世界など食い倒れの街の象徴的存在です。",
+          "prompt": "大阪の食文化について知ったことを書いてみよう"
+        },
+        {
+          "mission_id": "study_1_001_nagoya",
+          "points": 40,
+          "society": "nagoya",
+          "society_type": "suburban",
+          "content": "名古屋の味噌かつは八丁味噌ベースの甘辛いタレが特徴。東海地方独特の豆味噌文化から生まれた料理で、矢場とんなどの老舗が有名です。味噌煮込みうどんや味噌おでんと並ぶ名古屋めしの代表格です。",
+          "prompt": "名古屋の食文化について知ったことを書いてみよう"
+        },
+        {
+          "mission_id": "study_1_001_sendai",
+          "points": 40,
+          "society": "sendai",
+          "society_type": "suburban",
+          "content": "仙台の牛タン焼きは戦後間もない1948年に「太助」の初代が考案。厚切りの牛タンを炭火で焼き、麦飯・テールスープ・浅漬けとセットでいただくスタイルが定番です。仙台駅周辺には牛タン通りもあります。",
+          "prompt": "仙台の食文化について知ったことを書いてみよう"
+        },
+        {
+          "mission_id": "study_1_001_kanazawa",
+          "points": 40,
+          "society": "kanazawa",
+          "society_type": "castle_town",
+          "content": "金沢の加賀料理は前田家の城下町文化から発展した武家料理。治部煮やかぶら寿しなど季節感を大切にした料理が特徴で、九谷焼や輪島塗の器に盛り付ける美しさも魅力です。近江町市場は食の宝庫として知られます。",
+          "prompt": "金沢の食文化について知ったことを書いてみよう"
+        },
+        {
+          "mission_id": "study_1_001_kobe",
+          "points": 40,
+          "society": "kobe",
+          "society_type": "coastal",
+          "content": "神戸ビーフは但馬牛の中でも特に厳しい基準をクリアした最高級和牛。きめ細やかなサシ（霜降り）が特徴で、明治時代に外国人居留地で提供されたことから世界的に有名になりました。",
+          "prompt": "神戸の食文化について知ったことを書いてみよう"
+        },
+        {
+          "mission_id": "study_1_001_hiroshima",
+          "points": 40,
+          "society": "hiroshima",
+          "society_type": "coastal",
+          "content": "広島風お好み焼きは生地・キャベツ・豚肉・焼きそばを重ねて焼く「重ね焼き」が特徴。関西風の「混ぜ焼き」とは異なる独自のスタイルで、お好み村やお好み共和国ひろしま村が観光名所になっています。",
+          "prompt": "広島の食文化について知ったことを書いてみよう"
+        }
+      ]
+    }
+  ]
+}

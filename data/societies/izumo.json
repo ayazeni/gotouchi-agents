@@ -1,0 +1,68 @@
+{
+  "society_key": "izumo",
+  "name": "出雲ひみつ結社",
+  "region_code": "322059",
+  "prefecture": "島根県",
+  "municipality": "出雲市",
+  "template": "castle_town",
+  "theme_color": "#7D6608",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "縁結びの神様が宿る秘密組織。",
+  "local_cuisine": [
+    "出雲そば",
+    "のどぐろ",
+    "宍道湖しじみ",
+    "出雲ぜんざい"
+  ],
+  "landmarks": [
+    "出雲大社",
+    "稲佐の浜",
+    "宍道湖",
+    "日本海夕景"
+  ],
+  "annual_events": [
+    {
+      "name": "出雲大社大祭礼",
+      "month": 10
+    },
+    {
+      "name": "宍道湖しじみまつり",
+      "month": 7
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜だがん",
+    "〜けん",
+    "だんだん"
+  ],
+  "historical_figures": [
+    "大国主命",
+    "大山祇神"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "千家尊福", "field": "神職・政治家", "era": "明治", "episode": "出雲大社の大宮司を務めた宗教家。明治時代に神道の普及と独立に尽力し、元老院議員・府知事も歴任した" },
+    { "name": "小泉八雲（ラフカディオ・ハーン）", "field": "文学者", "era": "明治", "episode": "出雲・松江に移住したギリシャ生まれの作家。「怪談」など日本の伝承文学を英語で世界に紹介した" },
+    { "name": "堀尾吉晴", "field": "武将・大名", "era": "江戸初期", "episode": "出雲松江藩の礎を築いた武将。豊臣・徳川両政権に仕え出雲の統治を行った" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

@@ -1,0 +1,67 @@
+{
+  "society_key": "kamakura",
+  "name": "鎌倉ひみつ結社",
+  "region_code": "142050",
+  "prefecture": "神奈川県",
+  "municipality": "鎌倉市",
+  "template": "castle_town",
+  "theme_color": "#4A235A",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "武家の都に潜む歴史深き秘密組織。",
+  "local_cuisine": [
+    "鎌倉野菜",
+    "しらす丼",
+    "鳩サブレー",
+    "精進料理"
+  ],
+  "landmarks": [
+    "高徳院（鎌倉大仏）",
+    "鶴岡八幡宮",
+    "長谷寺",
+    "稲村ヶ崎"
+  ],
+  "annual_events": [
+    {
+      "name": "鎌倉まつり",
+      "month": 4
+    },
+    {
+      "name": "鶴岡八幡宮例大祭",
+      "month": 9
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜じゃん"
+  ],
+  "historical_figures": [
+    "源頼朝",
+    "北条政子",
+    "源義経"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "源頼朝", "field": "武将・将軍", "era": "平安-鎌倉", "episode": "鎌倉幕府を開いた初代将軍。平氏を打倒し武家政権の時代を切り開いた。鶴岡八幡宮を崇敬し鎌倉の礎を築いた" },
+    { "name": "北条政子", "field": "武将・政治家", "era": "鎌倉", "episode": "源頼朝の妻で「尼将軍」と呼ばれた鎌倉幕府の実力者。承久の乱で御家人を結集し朝廷の討幕を退けた" },
+    { "name": "栄西", "field": "僧侶", "era": "鎌倉", "episode": "宋から禅宗と茶をもたらした高僧。鎌倉に寿福寺を開創し源頼家・頼朝の帰依を受けた禅宗の先駆者" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

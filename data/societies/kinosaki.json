@@ -1,0 +1,69 @@
+{
+  "society_key": "kinosaki",
+  "name": "城崎ひみつ結社",
+  "region_code": "282104",
+  "prefecture": "兵庫県",
+  "municipality": "豊岡市",
+  "template": "onsen",
+  "theme_color": "#5B2333",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "山陰の名湯・城崎に潜む秘密組織。",
+  "local_cuisine": [
+    "カニ料理",
+    "但馬牛",
+    "出石そば",
+    "柳かれい"
+  ],
+  "landmarks": [
+    "城崎温泉七湯",
+    "玄武洞",
+    "出石城下町",
+    "竹野浜"
+  ],
+  "annual_events": [
+    {
+      "name": "城崎温泉カニまつり",
+      "month": 11
+    },
+    {
+      "name": "玄武洞まつり",
+      "month": 8
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜やで",
+    "〜けん",
+    "〜でっせ"
+  ],
+  "onsen_types": [
+    "塩化物泉",
+    "単純温泉",
+    "炭酸水素塩泉"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "志賀直哉", "field": "小説家", "era": "大正-昭和", "episode": "城崎温泉に療養滞在し「城の崎にて」を執筆した「小説の神様」。城崎は彼の作品により全国的に知られるようになった" },
+    { "name": "仙石秀久", "field": "武将・大名", "era": "戦国-江戸", "episode": "但馬出石藩の藩主。関ヶ原後に但馬を統治し城崎温泉の保護・振興に努めた" },
+    { "name": "山陰道の僧・道智", "field": "僧侶", "era": "奈良", "episode": "城崎温泉を開いたとされる伝説の高僧。但馬温泉寺を創建し城崎に仏教文化をもたらした開湯の祖とされる" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

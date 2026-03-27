@@ -1,0 +1,71 @@
+{
+  "society_key": "yamaguchi",
+  "name": "山口ひみつ結社",
+  "region_code": "352012",
+  "prefecture": "山口県",
+  "municipality": "山口市",
+  "template": "coastal",
+  "theme_color": "#1A5276",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "維新の志士が生まれた秘密組織。",
+  "local_cuisine": [
+    "ふぐ料理",
+    "外郎",
+    "瓦そば",
+    "シロウオ"
+  ],
+  "landmarks": [
+    "秋芳洞",
+    "角島大橋",
+    "萩城下町",
+    "錦帯橋",
+    "長門湯本温泉"
+  ],
+  "annual_events": [
+    {
+      "name": "山口七夕ちょうちんまつり",
+      "month": 8
+    },
+    {
+      "name": "南総里見八犬伝まつり",
+      "month": 11
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜じゃけん",
+    "〜ちゃ",
+    "〜のう"
+  ],
+  "fish_species": [
+    "フグ",
+    "マグロ",
+    "ヒラメ",
+    "ウニ"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "吉田松陰", "field": "思想家・教育者", "era": "幕末", "episode": "萩・松下村塾で伊藤博文・高杉晋作ら明治の英雄を育てた思想家。「至誠にして動かざる者は未だ之れ有らざるなり」の言葉を遺した" },
+    { "name": "高杉晋作", "field": "武士・活動家", "era": "幕末", "episode": "長州萩出身の維新の志士。奇兵隊を創設し幕府軍を撃退。「おもしろきこともなき世をおもしろく」の辞世で知られる革命家" },
+    { "name": "伊藤博文", "field": "政治家", "era": "明治", "episode": "長州・光市出身の初代内閣総理大臣。大日本帝国憲法を起草し日本近代国家の制度設計を主導した明治政府の中心人物" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

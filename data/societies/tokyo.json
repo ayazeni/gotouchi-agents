@@ -1,0 +1,71 @@
+{
+  "society_key": "tokyo",
+  "name": "東京ひみつ結社",
+  "region_code": "130001",
+  "prefecture": "東京都",
+  "municipality": "東京都",
+  "template": "suburban",
+  "theme_color": "#2C3E50",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "世界都市の陰に潜む秘密組織。",
+  "local_cuisine": [
+    "もんじゃ焼き",
+    "深川めし",
+    "どじょう鍋",
+    "東京ラーメン"
+  ],
+  "landmarks": [
+    "浅草寺",
+    "東京スカイツリー",
+    "東京タワー",
+    "新宿御苑",
+    "上野恩賜公園"
+  ],
+  "annual_events": [
+    {
+      "name": "浅草三社祭",
+      "month": 5
+    },
+    {
+      "name": "隅田川花火大会",
+      "month": 7
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜じゃん",
+    "べらんめえ"
+  ],
+  "commercial_areas": [
+    "渋谷",
+    "新宿",
+    "銀座",
+    "秋葉原",
+    "浅草"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "徳川家康", "field": "武将・将軍", "era": "戦国-江戸", "episode": "江戸（現・東京）に幕府を開いた天下人。沼地だった江戸を世界最大の都市に発展させた都市計画の祖" },
+    { "name": "葛飾北斎", "field": "浮世絵師", "era": "江戸後期", "episode": "江戸出身の世界的浮世絵師。「富嶽三十六景」でモネら印象派に影響を与え、日本の美術を世界に広めた巨匠" },
+    { "name": "福沢諭吉", "field": "思想家・教育者", "era": "明治", "episode": "東京で慶應義塾を創設した啓蒙思想家。「学問のすゝめ」で近代日本の独立自尊の精神を説き教育の普及に貢献した" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

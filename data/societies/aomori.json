@@ -1,0 +1,70 @@
+{
+  "society_key": "aomori",
+  "name": "青森ひみつ結社",
+  "region_code": "020001",
+  "prefecture": "青森県",
+  "municipality": "青森市",
+  "template": "agricultural",
+  "theme_color": "#C0392B",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "津軽の大地と豊かな恵みの秘密組織。",
+  "local_cuisine": [
+    "りんごジュース",
+    "せんべい汁",
+    "じゃっぱ汁",
+    "いちご煮"
+  ],
+  "landmarks": [
+    "青森ねぶた",
+    "三内丸山遺跡",
+    "八甲田山",
+    "奥入瀬渓流"
+  ],
+  "annual_events": [
+    {
+      "name": "青森ねぶた祭",
+      "month": 8
+    },
+    {
+      "name": "弘前さくらまつり",
+      "month": 4
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜だべ",
+    "わ",
+    "なんぼ"
+  ],
+  "crops": [
+    "りんご",
+    "にんにく",
+    "長芋",
+    "ごぼう"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "棟方志功", "field": "版画家", "era": "昭和", "episode": "青森出身の世界的版画家。「わだばゴッホになる」と言って上京し、独自の板画で国際的な評価を得た" },
+    { "name": "太宰治", "field": "小説家", "era": "昭和", "episode": "津軽五所川原生まれの作家。「斜陽」「人間失格」など戦後文学の傑作を生み出した" },
+    { "name": "工藤俊作", "field": "軍人", "era": "昭和", "episode": "青森出身の海軍中佐。第二次世界大戦中に敵の生存者を救助した「武士道」的行為で世界に知られる" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

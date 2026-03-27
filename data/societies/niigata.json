@@ -1,0 +1,71 @@
+{
+  "society_key": "niigata",
+  "name": "新潟ひみつ結社",
+  "region_code": "151009",
+  "prefecture": "新潟県",
+  "municipality": "新潟市",
+  "template": "agricultural",
+  "theme_color": "#145A32",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "米と酒の越後に潜む秘密組織。",
+  "local_cuisine": [
+    "へぎそば",
+    "タレかつ丼",
+    "のっぺ",
+    "笹団子",
+    "栃尾の油揚げ"
+  ],
+  "landmarks": [
+    "朱鷺メッセ",
+    "萬代橋",
+    "北方文化博物館",
+    "佐渡島"
+  ],
+  "annual_events": [
+    {
+      "name": "新潟まつり",
+      "month": 8
+    },
+    {
+      "name": "長岡まつり大花火大会",
+      "month": 8
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜らろ",
+    "〜がね",
+    "えちご弁"
+  ],
+  "crops": [
+    "コシヒカリ",
+    "梨",
+    "枝豆",
+    "長芋"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "上杉謙信", "field": "武将・大名", "era": "戦国", "episode": "越後の龍と呼ばれた戦国武将。武田信玄と川中島で激突し義を重んじた武将として今も敬愛される。春日山城を本拠とした" },
+    { "name": "良寛", "field": "僧侶・歌人", "era": "江戸後期", "episode": "越後・出雲崎出身の禅僧。子供たちと遊ぶ姿や清貧の生き方が愛され「日本一の歌人」とも称される温かな人格者" },
+    { "name": "田中角栄", "field": "政治家", "era": "昭和", "episode": "新潟・刈羽出身の元内閣総理大臣。日中国交正常化を実現し「今太閤」として国民的人気を誇った昭和最大の政治家" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}

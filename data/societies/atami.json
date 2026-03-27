@@ -1,0 +1,67 @@
+{
+  "society_key": "atami",
+  "name": "熱海ひみつ結社",
+  "region_code": "222046",
+  "prefecture": "静岡県",
+  "municipality": "熱海市",
+  "template": "onsen",
+  "theme_color": "#884EA0",
+
+  "_comment_initial": "初期5項目（ミッション生成に使用）",
+  "description": "海と温泉の街に潜む秘密組織。",
+  "local_cuisine": [
+    "金目鯛料理",
+    "干物",
+    "温泉饅頭",
+    "さわやかハンバーグ"
+  ],
+  "landmarks": [
+    "熱海城",
+    "MOA美術館",
+    "来宮神社",
+    "熱海サンビーチ"
+  ],
+  "annual_events": [
+    {
+      "name": "熱海海上花火大会",
+      "month": 7
+    },
+    {
+      "name": "熱海梅園梅まつり",
+      "month": 2
+    }
+  ],
+
+  "_comment_existing": "既存データ（初期項目以外・成長済み扱い）",
+  "dialect_samples": [
+    "〜じゃん",
+    "〜だら"
+  ],
+  "onsen_types": [
+    "塩化物泉",
+    "ナトリウム泉"
+  ],
+
+  "_comment_famous": "人物（初期3名入り・自動成長対象）",
+  "famous_people": [
+    { "name": "尾崎紅葉", "field": "小説家", "era": "明治", "episode": "熱海を舞台にした「金色夜叉」を執筆。熱海の「お宮の松」はこの作品から生まれた名所となっている" },
+    { "name": "間宮林蔵", "field": "探検家", "era": "江戸後期", "episode": "伊豆出身の探検家。樺太を探検し間宮海峡を発見。シーボルトにも知られた日本の偉大な地理学者" },
+    { "name": "松尾芭蕉", "field": "俳人", "era": "江戸", "episode": "伊豆・熱海地域を旅した俳聖。伊豆の海と景色を詠んだ句を残し、この地の風光明媚さを後世に伝えた" }
+  ],
+
+  "_comment_growth": "成長用空枠（ユーザー行動＋学習データで自動成長）",
+  "souvenirs": [],
+  "filming_locations": [],
+  "local_trivia": [],
+  "seasonal_highlights": [],
+  "local_brands": [],
+  "traditional_crafts": [],
+  "nature_spots": [],
+  "transportation": [],
+  "sister_cities": [],
+  "local_sports": [],
+  "world_heritage": [],
+  "urban_legends": [],
+  "photo_spots": [],
+  "local_numbers": {}
+}
